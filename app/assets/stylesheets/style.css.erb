@@ -2,6 +2,75 @@
   font-family: 'Cabin', sans-serif;
 }
 
+@media all and ( min-width: 1075px) {
+  #mobileLogo img {
+    display: none;
+  }
+}
+
+@media all and ( max-width: 1075px )
+{
+  #logo img {
+    position: absolute;
+    top: 0;
+    left: -432px;
+    visibility: hidden;
+  }
+
+  li.link.nonlogo {
+  width: 25%;
+  text-align: center;
+  }
+
+  #mobileLogo {
+    display: flex;
+    height:120px;
+  }
+
+  #mobileLogo img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .navbar.navbar-default {
+    margin-bottom: 0px;
+  }
+}
+
+@media all and (max-width: 768px ) {
+  #logo img {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    visibility: hidden;
+  }
+
+
+  li.link.nonlogo {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul.nav.navbar-nav.navbar-left.new {
+    width: 100%;
+    height: 300px;
+    margin-left: 0%;
+  }
+
+}
+
+div#nameTag {
+position: relative;
+width: 40%;
+top: 75px;
+margin-left: 60%;
+background-color: rgba(255,255,255,.7);
+padding: 15px;
+text-align: center;
+color: grey;
+font-size: 15px;
+}
+
 input:focus {outline:none;}
 textarea:focus {outline:none;}
 
@@ -10,9 +79,42 @@ input {
   color: black;
 }
 
-textarea#user_message {
+.aboutLeft {
+margin-left: 5%
+}
+
+div#header {
+width: 100%;
+display: flex;
+}
+
+div#title {
+margin: auto;
+margin-bottom: 30px;
+margin-top: 40px;
+font-size: 30px;
+color: rgba(45,45,113,.8);
+border-bottom: 1px solid rgba(45,45,113,.8);
+}
+
+.aboutImage {
+  width: 71%;
+height: 640px;
+background-image: url("Brooke2.jpg");
+background-size: cover;
+margin: auto;
+display: flex;
+}
+
+#imageBorder {
+  width: 100%;
+  margin: 7px;
+border: 2px solid white;
+}
+
+#messageArea {
 height: 300px;
-width: 500px;
+width: 75%;
 border: 3px solid grey;
 color: black;
 }
@@ -27,7 +129,8 @@ border: none;
 }
 
 ul.nav.navbar-nav.navbar-left {
-width: 100%;
+width: 80%;
+margin-left: 10%;
 }
 
 li.link {
@@ -80,7 +183,7 @@ div#body {
 div#container {
 width: 80%;
 margin: auto;
-background-color: rgba(0,0,66,.8);
+background-color: rgba(45,45,113,.8);
 }
 
 div#form {
@@ -170,9 +273,6 @@ visibility: hidden;
 li.link:hover p {
   visibility: visible;
 }
-li.link.nonlogo:hover {
-  border: 1px solid black;
-}
 
 .menulink a {
   text-decoration: none;
@@ -196,25 +296,25 @@ li.link.nonlogo:hover {
   padding-top: 5;
 }
 
-div#middle {
+div#middle1 {
   width: 100%;
-  height: 600px;
+  height: 650px;
   display: flex;
 }
 
-div#container1 {
-  width: 90%;
-  height: 520px;
-  background-image: url("overlay.png"),url("bham.jpg");
+div#container2 {
+  width: 80%;
+  height: 640px;
+  background-image: url("overlay.png"),url("BHM2.jpg");
   background-size: cover;
   margin: auto;
   display: flex;
 
 }
 
-div#intro {
+div#intro1 {
   width: 100%;
-  height: 505px;
+  height: 625px;
   margin: 7px;
   border: 2px solid white;
   text-align: center;

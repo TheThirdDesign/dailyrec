@@ -2,6 +2,49 @@
   font-family: 'Cabin', sans-serif;
 }
 
+@media all and ( max-width: 1075px )
+{
+  #logo img {
+    display: none;
+  }
+
+  li.link.nonlogo {
+  width: 25%;
+  text-align: center;
+  }
+}
+
+@media all and (max-width: 768px ) {
+  li.link.nonlog {
+    width: 100%;
+    text-align: center;
+    margin-left: 37%;
+  }
+
+  ul.nav.navbar-nav.navbar-left {
+    width: 100%;
+    height: 300px;
+    margin-left: 0%;
+  }
+
+}
+
+
+input:focus {outline:none;}
+textarea:focus {outline:none;}
+
+input {
+  border: 3px solid grey;
+  color: black;
+}
+
+#messageArea {
+height: 300px;
+width: 75%;
+border: 3px solid grey;
+color: black;
+}
+
 a.navbar-brand {
 margin-top: -50px;
 margin-bottom: 30px;
@@ -12,7 +55,8 @@ border: none;
 }
 
 ul.nav.navbar-nav.navbar-left {
-width: 100%;
+width: 80%;
+margin-left: 10%;
 }
 
 li.link {
@@ -76,8 +120,21 @@ color: white;
 }
 
 input[type="submit"] {
-background-color: grey;
-border: 1px solid white;
+background-color: white;
+border: 1px solid grey;
+}
+
+.item {
+width: 905;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+line-height: 1;
+margin: auto;
+}
+
+li.link.nonlogo a {
+font-size: 22px;
 }
 
 body {
@@ -165,25 +222,25 @@ li.link:hover p {
   padding-top: 5;
 }
 
-div#middle {
+div#middle1 {
   width: 100%;
-  height: 600px;
+  height: 650px;
   display: flex;
 }
 
-div#container1 {
-  width: 90%;
-  height: 520px;
-  background-image: url("overlay.png"),url("bham.jpg");
+div#container2 {
+  width: 80%;
+  height: 640px;
+  background-image: url("overlay.png"),url("BHM2.jpg");
   background-size: cover;
   margin: auto;
   display: flex;
 
 }
 
-div#intro {
+div#intro1 {
   width: 100%;
-  height: 505px;
+  height: 625px;
   margin: 7px;
   border: 2px solid white;
   text-align: center;

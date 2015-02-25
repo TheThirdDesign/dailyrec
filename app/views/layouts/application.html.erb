@@ -24,15 +24,19 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
 
-      <ul class="nav navbar-nav navbar-left">
-        <li class="link nonlogo"><%= link_to "About Us", { controller: "home", action: "show" } %><p>meet the team</p></li>
-        <li class="link nonlogo"><%= link_to "Listings", listings_path %><p>see the properties</p></li>
-        <li class="link" id="logo"><a href="http://localhost:3000/"><%= image_tag 'Brooke_WebBanner-01.png'%></a></li>
-        <li class="link nonlogo"><%= link_to "Contact", new_user_path %><p>let us hear from you</p></li>
-        <li class="link nonlogo"><%= link_to "Blog", posts_path %><p>read the daily recs</p></li>
+      <ul class="nav navbar-nav navbar-left new">
+        <li class="link nonlogo"><%= link_to "ABOUT US", { controller: "home", action: "show" } %><p>meet the team</p></li>
+        <li class="link nonlogo"><%= link_to "LISTINGS", listings_path %><p>see the properties</p></li>
+        <li class="link" id="logo"><a href="http://localhost:3000/"><%= image_tag 'Brooke_WebBanner-02.png'%></a></li>
+        <li class="link nonlogo"><%= link_to "CONTACT US", new_user_path %><p>let us hear from you</p></li>
+        <li class="link nonlogo"><%= link_to "BLOG", posts_path %><p>read the daily recs</p></li>
       </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
+<div id="mobileLogo">
+  <%= image_tag 'Brooke_WebBanner-02.png'%>
+</div>
+
 <%= yield %>
 <div id="footer">
   <div id="copyright">
