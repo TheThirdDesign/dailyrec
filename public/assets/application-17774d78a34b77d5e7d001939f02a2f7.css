@@ -305,7 +305,7 @@ div#middle1 {
 div#container2 {
   width: 80%;
   height: 640px;
-  background-image: url("overlay.png"),url("BHM2-646779d7a0750834982ff1ee6fe912b6.jpg");
+  background-image: url("overlay.png"),url("BHM2.jpg");
   background-size: cover;
   margin: auto;
   display: flex;
@@ -382,3 +382,4 @@ div#copyright p a {
 
 
  */
+
