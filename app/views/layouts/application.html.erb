@@ -3,7 +3,7 @@
 <head>
   <title>Dailyrec</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
+  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -25,17 +25,26 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
 
       <ul class="nav navbar-nav navbar-left">
-        <li class="link"><a>About Us</a></li>
-        <li class="link"><a>Listings</a></li>
-        <li class="link" id="logo"><%= image_tag 'Brooke_WebBanner-01.png' %></li>
-        <li class="link"><a>Contact</a></li>
-        <li class="link"><a>Blog</a></li>
+        <li class="link nonlogo"><%= link_to "About Us", { controller: "home", action: "show" } %><p>meet the team</p></li>
+        <li class="link nonlogo"><%= link_to "Listings", listings_path %><p>see the properties</p></li>
+        <li class="link" id="logo"><a href="http://localhost:3000/"><%= image_tag 'Brooke_WebBanner-01.png'%></a></li>
+        <li class="link nonlogo"><%= link_to "Contact", new_user_path %><p>let us hear from you</p></li>
+        <li class="link nonlogo"><%= link_to "Blog", posts_path %><p>read the daily recs</p></li>
       </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
 <%= yield %>
+<div id="footer">
+  <div id="copyright">
+    <p>Copyright The Daily Rec 2015 | Designed by <a href="http://www.thethird.co">Trey Jackson</a> | Logo Design By <a href="http://www.winstonwatersdesign.com/">Winston Waters</a></p>
+  </div>
+</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script>
+
+
+</script>
 </body>
 </html>

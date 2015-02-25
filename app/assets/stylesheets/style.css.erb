@@ -1,3 +1,22 @@
+* {
+  font-family: 'Cabin', sans-serif;
+}
+
+input:focus {outline:none;}
+textarea:focus {outline:none;}
+
+input {
+  border: 3px solid grey;
+  color: black;
+}
+
+textarea#user_message {
+height: 300px;
+width: 500px;
+border: 3px solid grey;
+color: black;
+}
+
 a.navbar-brand {
 margin-top: -50px;
 margin-bottom: 30px;
@@ -31,6 +50,62 @@ width: 192px;
 .navbar-default {
 background-color: #f8f8f8;
 border: none;
+}
+
+li.link.nonlogo {
+margin-top: 20px;
+}
+
+div#listings {
+font-size: 50px;
+text-align: center;
+margin-top: 160px;
+margin-bottom: 260px;
+}
+
+div#form {
+text-align: center;
+}
+
+textarea#user_message {
+height: 300px;
+width: 500px;
+}
+
+div#body {
+  display: flex;
+  width: 100%;
+}
+
+div#container {
+width: 80%;
+margin: auto;
+background-color: rgba(0,0,66,.8);
+}
+
+div#form {
+margin: 7px;
+border: 2px solid white;
+padding: 20px;
+color: white;
+}
+
+input[type="submit"] {
+background-color: white;
+border: 1px solid grey;
+}
+
+.item {
+width: 905;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+line-height: 1;
+margin: auto;
+}
+
+li.link.nonlogo a {
+font-size: 22px;
 }
 
 body {
@@ -75,6 +150,30 @@ div#menu {
   width: 250;
   height: 125;
   }
+
+li#logo a {
+padding: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+color: rgb(0,0,120);
+font-size: 15px;
+padding-bottom: 0px;
+}
+
+li.link p {
+margin: 0 0 10px;
+font-size: 12px;
+visibility: hidden;
+}
+
+li.link:hover p {
+  visibility: visible;
+}
+li.link.nonlogo:hover {
+  border: 1px solid black;
+}
+
 .menulink a {
   text-decoration: none;
 }
@@ -115,7 +214,7 @@ div#container1 {
 
 div#intro {
   width: 100%;
-  height: 500px;
+  height: 505px;
   margin: 7px;
   border: 2px solid white;
   text-align: center;
