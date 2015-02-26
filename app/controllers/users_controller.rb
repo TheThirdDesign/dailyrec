@@ -8,7 +8,6 @@ def create
     # Create the user from params
 
     @user = User.create(user_params)
-    binding.pry
     if @user.save
       # Deliver the signup email
       UserNotifier.send_signup_email(@user).deliver_now
