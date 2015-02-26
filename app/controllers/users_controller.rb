@@ -10,7 +10,7 @@ def create
     @user = User.create(user_params)
     if @user.save
       # Deliver the signup email
-      UserNotifier.send_signup_email(@user).deliver_now
+      UserNotifier.send_signup_email(@user).deliver
       redirect_to '/'
     else
       render :action => 'new'
