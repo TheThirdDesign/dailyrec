@@ -6,10 +6,12 @@ end
 
 def create
     # Create the user from params
+
     @user = User.create(user_params)
+    binding.pry
     if @user.save
       # Deliver the signup email
-      UserNotifier.send_signup_email(@user).deliver
+      UserNotifier.send_signup_email(@user).deliver_now
       redirect_to '/'
     else
       render :action => 'new'
@@ -18,7 +20,7 @@ def create
 
   private
     def user_params
-      params.require(:user).permit(:naem, :email, :message)
+      params.require(:user).permit(:name, :email, :message)
     end
 
 end
