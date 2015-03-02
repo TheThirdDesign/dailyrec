@@ -538,7 +538,7 @@ div#middle1.mobile {
   display: flex;
 }
 
-div.containerHome {
+div.containerHome.new {
   width: 80%;
   height: 700px;
   background-image: asset-data-url("overlay.png"), asset-data-url("BHM2.jpg");
@@ -548,7 +548,7 @@ div.containerHome {
 
 }
 
-div.introHome {
+div.introHome.new {
   width: 100%;
   height: 685px;
   margin: 7px;
