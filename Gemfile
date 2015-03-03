@@ -33,6 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'rails_12factor', group: :production
+gem 'httparty'
+gem 'json'
 
 
 group :development, :test do

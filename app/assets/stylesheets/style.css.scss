@@ -6,10 +6,18 @@
   #mobileLogo img {
     display: none;
   }
+
+  div.socialMobile {
+    display: none;
+  }
 }
 
 @media all and ( max-width: 1075px )
 {
+  div.socialMobile {
+    display: none;
+  }
+
   #logo img {
     position: absolute;
     top: 0;
@@ -44,12 +52,22 @@
     display: none;
   }
 
-  div.aboutLeft {
+  div.aboutLeft1 {
     margin-left: 0;
   }
 }
 
 @media all and (max-width: 768px ) {
+
+  div.social {
+    display: none;
+  }
+
+  div.socialMobile {
+    text-align: center;
+    margin-top: 20px;
+  }
+
   #logo img {
     position: absolute;
     top: 0;
@@ -85,7 +103,7 @@
     height: 415px;
   }
 
-  div.aboutLeft {
+  div.aboutLeft1 {
     margin-left: 0;
   }
 
@@ -130,6 +148,15 @@
     and (orientation : landscape)
     and (-webkit-min-device-pixel-ratio : 2)
   {
+
+    div.social {
+      display: none;
+    }
+    div.socialMobile {
+text-align: center;
+margin-top: 20px;
+}
+
 #logo img {
   position: absolute;
   top: 0;
@@ -165,7 +192,7 @@ div.aboutImage1 {
   height: 415px;
 }
 
-div.aboutLeft {
+div.aboutLeft1 {
   margin-left: 0;
 }
 
@@ -211,6 +238,15 @@ div#middle1.mobile {
     and (orientation : portrait)
     and (-webkit-min-device-pixel-ratio : 2)
   {
+
+div.socialMobile {
+text-align: center;
+margin-top: 20px;
+}
+    div.social {
+      display: none;
+    }
+
   #logo img {
     position: absolute;
     top: 0;
@@ -246,7 +282,7 @@ div#middle1.mobile {
     height: 415px;
   }
 
-  div.aboutLeft {
+  div.aboutLeft1 {
     margin-left: 0;
   }
 
@@ -307,8 +343,18 @@ input {
   color: black;
 }
 
-.aboutLeft {
-margin-left: 5%
+.aboutLeft1 {
+margin-left: 9%;
+margin-bottom: 100px;
+}
+
+.row.about {
+margin-bottom: 100px;
+}
+
+.aboutInfo p {
+width: 86%;
+font-size: 20px;
 }
 
 div#header {
@@ -327,9 +373,9 @@ font-family: 'Fira Sans', sans-serif;
 }
 
 .aboutImage1 {
-  width: 71%;
+  width: 90%;
 height: 640px;
-background-image: asset-data-url("Brooke3.jpg");
+background-image: asset-data-url("Brooke4.jpg");
 background-size: cover;
 margin: auto;
 display: flex;
@@ -416,10 +462,11 @@ div#body {
   width: 100%;
 }
 
-div#container {
+div#container1 {
 width: 80%;
 margin: auto;
-background-color: rgba(45,45,113,.8);
+background-color: rgba(45,45,113,1);
+margin-bottom: 100px;
 }
 
 div#form {
@@ -492,6 +539,7 @@ div#menu {
 
 li#logo a {
 padding: 0;
+text-align: center;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -536,6 +584,7 @@ div#middle1 {
   width: 100%;
   height: 710px;
   display: flex;
+  margin-bottom: 100px;
 }
 
 .containerHome.new {
@@ -578,29 +627,63 @@ div#intro p italic {
   font-family: GothamNarrowItalic;
 }
 
-div#footer {
-  width: 100%;
-  height: 100px;
-  display: flex;
+footer {
+display: block;
+position: absolute;
+width: 100%;
+background-color: black;
+left: 0;
+margin-top: 10px;
+padding-bottom: 100px;
 }
 
-div#copyright {
-  width: 100%;
-  margin: auto;
-  font-family: GothamNarrow;
-  padding-top: 40px;
-  opacity: .5;
+div#copyright1 {
+width: 100%;
+margin: auto;
+opacity: .5;
+display: flex;
+font-family: 'Fira Sans', sans-serif;
 }
 
-div#copyright p {
-  text-align: center;
+div#copyright1 p {
+text-align: center;
+margin: auto;
+width: 100%;
+font-family: 'Fira Sans', sans-serif;
+color: white;
+padding-top: 25px;
 }
 
-div#copyright p a {
+div#copyright1 p a {
   text-decoration: none;
-  color: #00008F;
+  color: white;
 }
 
 div#navbar-collapse-1 {
 background-color: white;
+}
+
+.social1 {
+position: fixed;
+right: 28px;
+top: 250px;
+width: 21px;
+}
+
+.social1 a img {
+padding-top: 20px;
+}
+
+.instagram {
+width: 100%;
+display: inline;
+}
+
+div#instagramHolder {
+width: 80%;
+margin: auto;
+}
+
+.instagram img {
+width: 20%;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Dailyrec</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -7,9 +7,10 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-<div id="window">
+  <div id="window">
       <nav class="navbar navbar-default" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -36,14 +37,28 @@
 <div id="mobileLogo">
   <%= image_tag 'Brooke_WebBanner-02.png'%>
 </div>
-
+<div class="socialMobile">
+  <a href="http://www.pinterest.com/thedailyrec/"><%= image_tag 'pinterest.png'%></a>
+  <a href="http://instagram.com/thedailyrec/"><%= image_tag 'instagram.png'%></a>
+  <a href="#"><%= image_tag 'facebook.png'%></a>
+</div>
+<div class="social1">
+  <a href="http://www.pinterest.com/thedailyrec/"><%= image_tag 'pinterest.png'%></a>
+  <a href="http://instagram.com/thedailyrec/"><%= image_tag 'instagram.png'%></a>
+  <a href="#"><%= image_tag 'facebook.png'%></a>
+</div>
+<div class="container">
 <%= yield %>
-<div id="footer">
-  <div id="copyright">
-    <p>Copyright The Daily Rec 2015 | Designed by <a href="http://www.thethird.co">Trey Jackson</a> | Logo Design By <a href="http://www.winstonwatersdesign.com/">Winston Waters</a></p>
+</div>
+<footer>
+  <div id="copyright1">
+    <p class='footerText'>Copyright The Daily Rec 2015 | Designed by <a href="http://www.thethird.co">Trey Jackson</a> | Logo Design By <a href="http://www.winstonwatersdesign.com/">Winston Waters</a></p>
   </div>
+</footer>
 </div>
-</div>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script>
