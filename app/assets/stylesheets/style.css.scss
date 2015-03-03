@@ -1,5 +1,9 @@
 * {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
 }
 
 @media all and ( min-width: 1075px) {
@@ -48,9 +52,26 @@
     background-color: white;
   }
 
-  p {
+  li.link.nonlogo1.quarter p {
     display: none;
   }
+
+  li.link.nonlogo1.quarter.mobile p {
+    display: none;
+  }
+
+  .aboutInfo p {
+    width: 74%;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  #contact p {
+width: 80%;
+text-align: center;
+margin: auto;
+}
 
   div.aboutLeft1 {
     margin-left: 0;
@@ -79,7 +100,7 @@
   li.link.nonlogo1.quarter.mobile {
     width: 100%;
     text-align: center;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
   }
 
   li.link.nonlogo1.quarter.mobile a {
@@ -90,7 +111,7 @@
     width: 100%;
     height: 240px;
     margin-left: 0%;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     border-bottom: 1px solid grey;
     margin-bottom: 25px;
   }
@@ -125,7 +146,6 @@
     margin: 7px;
     border: 2px solid white;
     text-align: center;
-    font-family: GothamNarrow;
     color: white;
     height: 400px;
   }
@@ -168,7 +188,7 @@ margin-top: 20px;
 li.link.nonlogo1.quarter.mobile {
   width: 100%;
   text-align: center;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 li.link.nonlogo1.quarter.mobile a {
@@ -179,7 +199,7 @@ ul.nav.navbar-nav.navbar-left.new.here {
   width: 100%;
   height: 240px;
   margin-left: 0%;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   border-bottom: 1px solid grey;
   margin-bottom: 25px;
 }
@@ -258,8 +278,7 @@ margin-top: 20px;
   li.link.nonlogo1.quarter.mobile {
     width: 100%;
     text-align: center;
-    font-family: 'Fira Sans', sans-serif;
-  }
+font-family: 'PT Sans', sans-serif;  }
 
   li.link.nonlogo1.quarter.mobile a {
     text-align: center;
@@ -269,7 +288,7 @@ margin-top: 20px;
     width: 100%;
     height: 240px;
     margin-left: 0%;
-    font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
     border-bottom: 1px solid grey;
     margin-bottom: 25px;
   }
@@ -331,7 +350,7 @@ padding: 15px;
 text-align: center;
 color: white;
 font-size: 15px;
-font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 font-weight: 500;
 }
 
@@ -339,7 +358,7 @@ input:focus {outline:none;}
 textarea:focus {outline:none;}
 
 input {
-  border: 3px solid grey;
+  // border: 3px solid grey;
   color: black;
 }
 
@@ -369,7 +388,7 @@ margin-top: 40px;
 font-size: 30px;
 color: rgba(45,45,113,.8);
 border-bottom: 1px solid rgba(45,45,113,0.8);
-font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 }
 
 .aboutImage1 {
@@ -390,9 +409,9 @@ border: 2px solid rgba(45,45,113,.8);
 #messageArea {
 height: 300px;
 width: 75%;
-border: 3px solid grey;
+
 color: black;
-font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 }
 
 a.navbar-brand {
@@ -412,7 +431,7 @@ margin-left: 10%;
 li.link.nonlogo1 {
 width: 19.5%;
 text-align: center;
-font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 }
 
 li#logo {
@@ -449,12 +468,13 @@ margin-bottom: 260px;
 
 div#form {
 text-align: center;
-font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 }
 
 textarea#user_message {
 height: 300px;
 width: 500px;
+font-family: 'PT Sans', sans-serif;
 }
 
 div#body {
@@ -462,10 +482,10 @@ div#body {
   width: 100%;
 }
 
-div#container1 {
+.container3 {
 width: 80%;
 margin: auto;
-background-color: rgba(45,45,113,1);
+background-color: rgba(4,30,66,1);
 margin-bottom: 100px;
 }
 
@@ -479,6 +499,7 @@ color: white;
 input[type="submit"] {
 background-color: white;
 border: 1px solid grey;
+font-family: 'PT Sans', sans-serif;
 }
 
 .item {
@@ -501,8 +522,8 @@ body {
 div#window {
   width: 99%;
   margin: 7px;
-  border: 2px solid #00008F;
-  border-right: 2px solid #00008F;
+  border: 2px solid rgba(4,30,66,1);
+  border-right: 2px solid rgba(4,30,66,1);
 }
 
 div#menu {
@@ -510,7 +531,7 @@ div#menu {
   width: 90%;
   height: 125;
   display: inline-flex;
-  font-family: GothamNarrow;
+font-family: 'PT Sans', sans-serif;
   text-decoration: none;
 }
 
@@ -543,7 +564,7 @@ text-align: center;
 }
 
 .navbar-default .navbar-nav>li>a {
-color: rgb(0,0,120);
+color: rgba(4,30,66,1);
 font-size: 15px;
 padding-bottom: 0px;
 }
@@ -566,7 +587,7 @@ li.link:hover p {
   margin: auto;
   width:100%;
   text-decoration: none;
-  color: rgb(0,0,120);
+  color: rgba(4,30,66,1);
   font-size: 20px;
   letter-spacing: 3;
   text-align: center;
@@ -603,7 +624,7 @@ div#middle1 {
   margin: 7px;
   border: 2px solid white;
   text-align: center;
-  font-family: GothamNarrow;
+font-family: 'PT Sans', sans-serif;
   color: white;
 }
 
@@ -624,7 +645,7 @@ letter-spacing: 2px;
 }
 
 div#intro p italic {
-  font-family: GothamNarrowItalic;
+font-family: 'PT Sans', sans-serif;
 }
 
 footer {
@@ -637,24 +658,23 @@ margin-top: 10px;
 padding-bottom: 100px;
 }
 
-div#copyright1 {
+div#copyright2 {
 width: 100%;
 margin: auto;
-opacity: .5;
 display: flex;
-font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 }
 
-div#copyright1 p {
+div#copyright2 p {
 text-align: center;
 margin: auto;
 width: 100%;
-font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 color: white;
 padding-top: 25px;
 }
 
-div#copyright1 p a {
+div#copyright2 p a {
   text-decoration: none;
   color: white;
 }
@@ -666,7 +686,7 @@ background-color: white;
 .social1 {
 position: fixed;
 right: 28px;
-top: 180px;
+top: 130px;
 width: 21px;
 }
 
@@ -702,5 +722,5 @@ padding-bottom: 10px;
 div#subscribe a {
   color: white;
   text-decoration: none;
-  font-family: 'Fira Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 }
