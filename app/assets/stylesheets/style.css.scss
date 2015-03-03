@@ -373,7 +373,7 @@ font-family: 'Fira Sans', sans-serif;
 }
 
 .aboutImage1 {
-  width: 90%;
+  width: 80%;
 height: 640px;
 background-image: asset-data-url("Brooke4.jpg");
 background-size: cover;
@@ -666,7 +666,7 @@ background-color: white;
 .social1 {
 position: fixed;
 right: 28px;
-top: 250px;
+top: 180px;
 width: 21px;
 }
 
@@ -686,4 +686,21 @@ margin: auto;
 
 .instagram img {
 width: 20%;
+}
+
+
+div#subscribe {
+position: relative;
+background-color: black;
+color: white;
+width: 150px;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+div#subscribe a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
 }
