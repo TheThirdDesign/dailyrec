@@ -24,11 +24,11 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
 
       <ul class="nav navbar-nav navbar-left new here">
-        <li class="link nonlogo1 quarter mobile"><%= link_to "HOME", { controller: "home", action: "index" } %><p class="subcaption">back to the start</p></li>
-        <li class="link nonlogo1 quarter mobile"><%= link_to "ABOUT US", { controller: "home", action: "show" } %><p class="subcaption">meet the team</p></li>
+        <li id="home" class="link nonlogo1 quarter mobile"><%= link_to "HOME", { controller: "home", action: "index" } %><p id="homeSub" class="subcaption">back to the start</p></li>
+        <li id="about" class="link nonlogo1 quarter mobile"><%= link_to "ABOUT US", { controller: "home", action: "show" } %><p id="aboutSub" class="subcaption">meet the team</p></li>
         <li class="link" id="logo"><%= image_tag 'Brooke_WebBanner-01.png'%></li>
-        <li class="link nonlogo1 quarter mobile"><%= link_to "CONTACT", new_user_path %><p class="subcaption">let us hear from you</p></li>
-        <li class="link nonlogo1 quarter mobile"><%= link_to "BLOG", posts_path %><p class="subcaption">read the daily recs</p></li>
+        <li id="contact" class="link nonlogo1 quarter mobile"><%= link_to "CONTACT", new_user_path %><p id="contactSub" class="subcaption">let us hear from you</p></li>
+        <li id="blog" class="link nonlogo1 quarter mobile"><%= link_to "BLOG", posts_path %><p id="blogSub" class="subcaption">read the daily recs</p></li>
       </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
@@ -61,14 +61,51 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("li.link.nonlogo").mouseover(function(){
-    console.log("hover");
-   $("").stop().slideDown("slow");
-  });
-  $("li .nonlogo").mouseout(function(){
-   $("li p").slideUp("slow");
-  });
+  $("#home a").mouseover(function(){
+   $("#homeSub").stop().slideDown("slow");
  });
+});
+
+$(document).ready(function(){
+  $("#home a").mouseout(function(){
+   $("#homeSub").slideUp("slow");
+  });
+});
+
+$(document).ready(function(){
+   $("#about a").mouseover(function(){
+    $("#aboutSub").stop().slideDown("slow");
+   });
+   });
+
+$(document).ready(function(){
+   $("#about a").mouseout(function(){
+    $("#aboutSub").slideUp("slow");
+   });
+   });
+
+$(document).ready(function(){
+  $("#contact a").mouseover(function(){
+   $("#contactSub").stop().slideDown("slow");
+  });
+  });
+$(document).ready(function(){
+  $("#contact a").mouseout(function(){
+   $("#contactSub").slideUp("slow");
+  });
+  });
+
+$(document).ready(function(){
+  $("#blog a").mouseover(function(){
+   $("#blogSub").stop().slideDown("slow");
+  });
+  });
+
+$(document).ready(function(){
+  $("#blog a").mouseout(function(){
+   $("#blogSub").slideUp("slow");
+  });
+  });
 
 </script>
 </body>
