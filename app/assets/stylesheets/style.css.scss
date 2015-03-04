@@ -1,9 +1,6 @@
-* {
+a {
   font-family: 'PT Sans', sans-serif;
-}
-
-body {
-  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
 }
 
 @media all and ( min-width: 1075px) {
@@ -35,7 +32,11 @@ body {
   }
 
   #mobileLogo {
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
     height:120px;
   }
 
@@ -137,7 +138,11 @@ margin: auto;
     background-image: asset-data-url("overlay.png"), asset-data-url("BHM2.jpg");
     background-size: cover;
     margin: auto;
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
     height: 415px;
   }
 
@@ -157,7 +162,11 @@ margin: auto;
   div#middle1.mobile {
     width: 100%;
     height: 510px;
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
   }
 
 }
@@ -225,6 +234,10 @@ div.containerHome.new {
   background-image: asset-data-url("overlay.png"), asset-data-url("BHM2.jpg");
   background-size: cover;
   margin: auto;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   height: 415px;
 }
@@ -245,6 +258,10 @@ div#footer {
 div#middle1.mobile {
   width: 100%;
   height: 510px;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
 }
 
@@ -313,7 +330,11 @@ font-family: 'PT Sans', sans-serif;
     background-image: asset-data-url("overlay.png"), asset-data-url("BHM2.jpg");
     background-size: cover;
     margin: auto;
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
     height: 415px;
   }
 
@@ -333,7 +354,11 @@ font-family: 'PT Sans', sans-serif;
   div#middle1.mobile {
     width: 100%;
     height: 510px;
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
   }
 
  }
@@ -362,15 +387,19 @@ font-size: 20px;
 
 div#header {
 width: 100%;
-display: flex;
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
 }
 
-div#title {
+div#title1 {
 margin: auto;
 margin-bottom: 30px;
 margin-top: 40px;
 font-size: 30px;
-color: rgba(45,45,113,.8);
+color: rgba(4,30,66,0.8);
 border-bottom: 1px solid rgba(4,30,66,0.8);
 font-family: 'PT Sans', sans-serif;
 }
@@ -381,7 +410,11 @@ height: 640px;
 background-image: asset-data-url("Brooke4.jpg");
 background-size: cover;
 margin: auto;
-display: flex;
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
 }
 
 #imageBorder1 {
@@ -462,6 +495,10 @@ font-family: 'PT Sans', sans-serif;
 }
 
 div#body {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   width: 100%;
 }
@@ -500,6 +537,10 @@ font-size: 22px;
 }
 
 body {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
 }
 
@@ -588,6 +629,10 @@ li.link:hover p {
 div#middle1 {
   width: 100%;
   height: 710px;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   margin-bottom: 100px;
 }
@@ -598,6 +643,10 @@ div#middle1 {
   background-image: asset-data-url("overlay.png"), asset-data-url("BHM2.jpg");
   background-size: cover;
   margin: auto;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
 
 }
@@ -645,7 +694,11 @@ padding-bottom: 100px;
 div#copyright2 {
 width: 100%;
 margin: auto;
-display: flex;
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
 font-family: 'PT Sans', sans-serif;
 }
 
