@@ -1,7 +1,8 @@
-
+<div>
 <div id="header">
   <div id="title1">Contact Us</div>
 </div>
+
 <div class="row">
 
   <div class="col-md-6">
@@ -15,15 +16,15 @@
     <div class="container3">
       <div id="form">
         <%= form_for @user do |f| %>
-             <%= f.label :name %>:
+             <%= f.label :name %>
              </br>
              <%= f.text_field :name %>
            </br>
-             <%= f.label :email %>:
+             <%= f.label :email %>
              </br>
              <%= f.email_field :email %>
              </br>
-             <%= f.label :message, id: "messageLabel1" %>:
+             <%= f.label :message, id: "messageLabel1" %>
              </br>
              <%= f.text_area :message, id: "messageArea" %>
               </br>
@@ -31,6 +32,6 @@
             <% end %>
       </div>
     </div>
-  </div>
+    </div>
 </div>
 </div>
