@@ -530,7 +530,13 @@ color: white;
 input[type="submit"] {
 background-color: white;
 border: 1px solid grey;
-font-family: 'PT Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+color: black;
+width: 24%;
+}
+
+label {
+  font-family: 'Quicksand', sans-serif;
 }
 
 .item {
@@ -768,7 +774,7 @@ width: 20%;
 }
 
 
-div#subscribe {
+div.sub {
 position: relative;
 background-color: black;
 color: white;
@@ -783,10 +789,10 @@ margin: auto;
 padding-top: 20px;
 }
 
-div#subscribe a {
+div.sub a {
   color: white;
   text-decoration: none;
-font-family: 'PT Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
 }
 
 div#footerText a {
