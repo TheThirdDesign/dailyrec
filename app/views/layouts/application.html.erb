@@ -23,12 +23,30 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
 
-      <ul class="nav navbar-nav navbar-left new here">
-        <li id="home" class="link nonlogo1 quarter mobile"><%= link_to "HOME", { controller: "home", action: "index" } %><p id="homeSub" class="subcaption">back to the start</p></li>
-        <li id="about" class="link nonlogo1 quarter mobile"><%= link_to "ABOUT US", { controller: "home", action: "show" } %><p id="aboutSub" class="subcaption">meet the team</p></li>
+      <ul class="nav navbar-nav navbar-left new here menu" id="menu">
+        <li id="home" class="link nonlogo1 quarter mobile">
+          <%= link_to "HOME", { controller: "home", action: "index" } %>
+        </li>
+        <li id="about" class="link nonlogo1 quarter mobile">
+          <a href="#">BROOKE WAHL</a>
+          <ul class="aboutUL">
+            <li class="drop"><%= link_to "ABOUT", { controller: "home", action: "show" } %></li>
+            <li class="drop"><%= link_to "FAQ", { controller: "home", action: "show" } %></li>
+          </ul>
+        </li>
         <li class="link" id="logo"><%= image_tag 'Brooke_WebBanner-01.png'%></li>
-        <li id="contact" class="link nonlogo1 quarter mobile"><%= link_to "CONTACT", new_user_path %><p id="contactSub" class="subcaption">let us hear from you</p></li>
-        <li id="blog" class="link nonlogo1 quarter mobile"><%= link_to "BLOG", posts_path %><p id="blogSub" class="subcaption">read the daily recs</p></li>
+        <li id="contact" class="link nonlogo1 quarter mobile">
+          <%= link_to "CONTACT", new_user_path %>
+          </li>
+        <li id="blog" class="link nonlogo1 quarter mobile">
+          <a href="#">LIFESTYLE</a>
+          <ul class="blogUL">
+            <li class="drop"><%= link_to "CURRENT FAVORITES", { controller: "home", action: "show" } %></li>
+            <li class="drop"><%= link_to "STORIES", { controller: "home", action: "show" } %></li>
+            <li class="drop"><%= link_to "AT HOME", { controller: "home", action: "show" } %></li>
+          </ul>
+        </li>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
@@ -60,54 +78,78 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script>
+// $(document).ready(function() {
+//     $('.menu').dropit();
+// });
+
 $(document).ready(function(){
-  $("#home a").mouseover(function(){
-   $("#homeSub").stop().slideDown("slow");
+  $("#blog a").mouseover(function(){
+   $(".blogUL").stop().fadeIn("slow");
  });
 });
 
 $(document).ready(function(){
-  $("#home a").mouseout(function(){
-   $("#homeSub").slideUp("slow");
+  $("#blog a").mouseout(function(){
+   $(".blogUL").fadeOut("slow");
   });
 });
 
 $(document).ready(function(){
    $("#about a").mouseover(function(){
-    $("#aboutSub").stop().slideDown("slow");
+    $(".aboutUL").stop().fadeIn("slow");
    });
    });
 
 $(document).ready(function(){
    $("#about a").mouseout(function(){
-    $("#aboutSub").slideUp("slow");
+    $(".aboutUL").fadeOut("slow");
    });
    });
 
-$(document).ready(function(){
-  $("#contact a").mouseover(function(){
-   $("#contactSub").stop().slideDown("slow");
-  });
-  });
-$(document).ready(function(){
-  $("#contact a").mouseout(function(){
-   $("#contactSub").slideUp("slow");
-  });
-  });
+$(window).load(function() { //start after HTML, images have loaded
 
-$(document).ready(function(){
-  $("#blog a").mouseover(function(){
-   $("#blogSub").stop().slideDown("slow");
-  });
-  });
+    var InfiniteRotator =
+    {
+        init: function()
+        {
+            //initial fade-in time (in milliseconds)
+            var initialFadeIn = 1000;
 
-$(document).ready(function(){
-  $("#blog a").mouseout(function(){
-   $("#blogSub").slideUp("slow");
-  });
-  });
+            //interval between items (in milliseconds)
+            var itemInterval = 5000;
 
+            //cross-fade time (in milliseconds)
+            var fadeTime = 2500;
+
+            //count number of items
+            var numberOfItems = $('.rotating-item').length;
+
+            //set current item
+            var currentItem = 0;
+
+            //show first item
+            $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+
+            //loop through the items
+            var infiniteLoop = setInterval(function(){
+                $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+
+                if(currentItem == numberOfItems -1){
+                    currentItem = 0;
+                }else{
+                    currentItem++;
+                }
+                $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
+
+            }, itemInterval);
+        }
+    };
+
+    InfiniteRotator.init();
+
+});
 </script>
+
 </body>
 <footer>
   <div id="copyright2">
