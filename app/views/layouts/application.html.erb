@@ -65,6 +65,17 @@
 </div>
 <div class="container">
 <%= yield %>
+<div id="Holder">
+  <div id="instagramTitle">INSTAGRAM @THEDAILYREC</div>
+  <div id="instagramHolder">
+    <% @images.each do |image| %>
+    <div class="instagram">
+      <img src="<%= image %>">
+    </div>
+    <% end %>
+  </div>
+</div>
+
 <div class="sub">
   <%= link_to "SUBSCRIBE", new_user_path %>
 </div>
