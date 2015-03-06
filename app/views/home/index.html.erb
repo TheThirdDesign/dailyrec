@@ -1,8 +1,8 @@
 
 
 
-  <div>
-      <div id="middle1" class="mobile">
+  <div id="windowCenter">
+      <div id="middle1">
         <div class="containerHome new">
           <%= image_tag "BHM2.jpg", :class => "rotating-item" %>
           <%= image_tag "MB.jpg", :class => "rotating-item" %>
@@ -11,6 +11,18 @@
           <%= image_tag "BHM5.jpg", :class => "rotating-item" %>
           <%= image_tag "BHM6.jpg", :class => "rotating-item" %>
           <%= image_tag "BHM7.jpg", :class => "rotating-item" %>
-          <div class="introHome new"></div>
+          <%= image_tag "border.png", :class => "border" %>
+        </div>
+      </div>
+
+</div>
+      <div id="Holder">
+        <div id="instagramTitle">INSTAGRAM @THEDAILYREC</div>
+        <div id="instagramHolder">
+          <% @images.each do |image| %>
+          <div class="instagram">
+            <img src="<%= image %>">
+          </div>
+          <% end %>
         </div>
       </div>

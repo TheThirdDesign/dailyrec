@@ -4,6 +4,7 @@
   <title>Dailyrec</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -11,81 +12,73 @@
   <div id="window">
       <nav class="navbar navbar-default" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div id="logo">logo</div>
-    </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="logo">logo</div>
+        </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
 
-      <ul class="nav navbar-nav navbar-left new here menu" id="menu">
-        <li id="home" class="link nonlogo1 quarter mobile">
-          <%= link_to "HOME", { controller: "home", action: "index" } %>
-        </li>
-        <li id="about" class="link nonlogo1 quarter mobile">
-          <a href="#">BROOKE WAHL</a>
-          <ul class="aboutUL">
-            <li class="drop"><%= link_to "ABOUT", { controller: "home", action: "show" } %></li>
-            <li class="drop"><%= link_to "FAQ", { controller: "home", action: "show" } %></li>
+          <ul class="nav navbar-nav navbar-left new here menu" id="menu">
+            <li id="home" class="link nonlogo1 quarter mobile">
+              <%= link_to "HOME", { controller: "home", action: "index" } %>
+            </li>
+            <li id="about" class="link nonlogo1 quarter mobile">
+              <a href="#">BROOKE WAHL</a>
+              <ul class="aboutUL">
+                <li class="drop"><%= link_to "ABOUT", { controller: "home", action: "show" } %></li>
+                <li class="drop"><%= link_to "FAQ", { controller: "about", action: "show" } %></li>
+              </ul>
+            </li>
+            <li class="link" id="logo"><%= image_tag 'Brooke_WebBanner-01.png'%></li>
+            <li id="contact" class="link nonlogo1 quarter mobile">
+              <%= link_to "CONTACT", new_user_path %>
+              </li>
+            <li id="blog" class="link nonlogo1 quarter mobile">
+              <a href="#">LIFESTYLE</a>
+              <ul class="blogUL">
+                <li class="drop"><%= link_to "CURRENT FAVORITES", { controller: "posts", action: "index" } %></li>
+                <li class="drop"><%= link_to "STORIES", { controller: "posts", action: "index" } %></li>
+                <li class="drop"><%= link_to "AT HOME", { controller: "posts", action: "index" } %></li>
+              </ul>
+            </li>
+            </li>
           </ul>
-        </li>
-        <li class="link" id="logo"><%= image_tag 'Brooke_WebBanner-01.png'%></li>
-        <li id="contact" class="link nonlogo1 quarter mobile">
-          <%= link_to "CONTACT", new_user_path %>
-          </li>
-        <li id="blog" class="link nonlogo1 quarter mobile">
-          <a href="#">LIFESTYLE</a>
-          <ul class="blogUL">
-            <li class="drop"><%= link_to "CURRENT FAVORITES", { controller: "home", action: "show" } %></li>
-            <li class="drop"><%= link_to "STORIES", { controller: "home", action: "show" } %></li>
-            <li class="drop"><%= link_to "AT HOME", { controller: "home", action: "show" } %></li>
-          </ul>
-        </li>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-</nav>
-<div id="mobileLogo">
-  <%= image_tag 'Brooke_WebBanner-02.png'%>
-</div>
-<div class="socialMobile">
-  <a href="http://www.pinterest.com/thedailyrec/"><%= image_tag 'pinterest.png'%></a>
-  <a href="http://instagram.com/thedailyrec/"><%= image_tag 'instagram.png'%></a>
-  <a href="#"><%= image_tag 'facebook.png'%></a>
-</div>
-<div class="social1">
-  <a href="http://www.pinterest.com/thedailyrec/"><%= image_tag 'pinterest.png', :id => "pinterest"%></a>
-  <a href="http://instagram.com/thedailyrec/"><%= image_tag 'instagram.png', :id => "instagram" %></a>
-  <a href="#"><%= image_tag 'facebook.png', :id => "facebook" %></a>
-</div>
-<div class="container">
-<%= yield %>
-<div id="Holder">
-  <div id="instagramTitle">INSTAGRAM @THEDAILYREC</div>
-  <div id="instagramHolder">
-    <% @images.each do |image| %>
-    <div class="instagram">
-      <img src="<%= image %>">
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="mobileLogo">
+        <%= image_tag 'Brooke_WebBanner-02.png'%>
+      </div>
+      <div class="socialMobile">
+        <a href="http://www.pinterest.com/thedailyrec/"><%= image_tag 'pinterest.png'%></a>
+        <a href="http://instagram.com/thedailyrec/"><%= image_tag 'instagram.png'%></a>
+        <a href="#"><%= image_tag 'facebook.png'%></a>
+      </div>
+      <div class="social1">
+        <a href="http://www.pinterest.com/thedailyrec/"><%= image_tag 'pinterest.png', :id => "pinterest"%></a>
+        <a href="http://instagram.com/thedailyrec/"><%= image_tag 'instagram.png', :id => "instagram" %></a>
+        <a href="#"><%= image_tag 'facebook.png', :id => "facebook" %></a>
+      </div>
+      <div class="sub">
+        <%= link_to "SUBSCRIBE", new_user_path %>
+      </div>
+
+        <%= yield %>
+
+
+
+
+
+
     </div>
-    <% end %>
-  </div>
 </div>
 
-<div class="sub">
-  <%= link_to "SUBSCRIBE", new_user_path %>
-</div>
-</div>
-</div>
-
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script>

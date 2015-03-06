@@ -1,17 +1,17 @@
 
 <div>
   <div id="aboutUs">
+
   <div id="header">
     <div id="title1">About Us</div>
   </div>
+
   <div class="row about">
     <div class="col-md-5 aboutLeft1">
-
       <div class="aboutImage1">
         <div id="imageBorder1">
         </div>
       </div>
-
     </div>
     <div class="col-md-5 aboutRight">
       <div class="aboutInfo">
@@ -20,4 +20,17 @@
     </div>
   </div>
 
+<div id="Holder">
+  <div id="instagramTitle">INSTAGRAM @THEDAILYREC</div>
+  <div id="instagramHolder">
+    <% @images.each do |image| %>
+    <div class="instagram">
+      <img src="<%= image %>">
+    </div>
+    <% end %>
+  </div>
+
+
+</div>
+</div>
 </div>

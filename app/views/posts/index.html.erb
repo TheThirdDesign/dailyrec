@@ -1,5 +1,14 @@
-<div>
+
 <div id="header">
   <div id="title1">Blog</div>
 </div>
 <div id="listings">Blog Coming Soon!</div>
+  <div id="Holder">
+    <div id="instagramTitle">INSTAGRAM @THEDAILYREC</div>
+    <div id="instagramHolder">
+      <% @images.each do |image| %>
+      <div class="instagram">
+        <img src="<%= image %>">
+      </div>
+      <% end %>
+    </div>

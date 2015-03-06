@@ -393,11 +393,6 @@ input {
 
 .aboutLeft1 {
 margin-left: 9%;
-margin-bottom: 100px;
-}
-
-.row.about {
-margin-bottom: 100px;
 }
 
 .aboutInfo p {
@@ -510,6 +505,7 @@ font-size: 50px;
 text-align: center;
 margin-top: 160px;
 margin-bottom: 260px;
+font-family: 'PT Sans', sans-serif;
 }
 
 div#form {
@@ -574,6 +570,7 @@ body {
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
+  position: relative;
 }
 
 div#window {
@@ -581,6 +578,7 @@ div#window {
   margin: 7px;
   border: 2px solid rgba(4,30,66,1);
   border-right: 2px solid rgba(4,30,66,1);
+  position:relative;
 }
 
 div#menu {
@@ -649,39 +647,16 @@ padding-bottom: 0px;
 }
 
 div#middle1 {
-  width: 100%;
-  height: 611px;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;
-  margin-bottom: 100px;
+width: 60%;
+margin: auto;
 }
 
 .containerHome.new {
-  width: 70.5%;
-  height: 500px;
-  // background-image: asset-data-url("BHM2.jpg");
-  // background-size: cover;
-  margin: auto;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;
-  margin-top: 75px;
+
 }
 
 .introHome.new {
-  position:relative;
-  width: 100%;
-  margin: 7px;
-  border: 2px solid white;
-  text-align: center;
-font-family: 'PT Sans', sans-serif;
-  color: white;
-  margin-bottom: -3.3%;
+
 }
 
 div#intro h1 {
@@ -769,12 +744,13 @@ padding-top: 20px;
 .instagram {
 width: 100%;
 display: inline;
+margin-left: 2.4%;
+margin-right: 2.4%;
 }
 
 div#instagramHolder {
-width: 100%;
+width: 90%;
 margin: auto;
-margin-left: 11%;
 margin-bottom: 4.5%;
 }
 
@@ -784,13 +760,15 @@ width: 15%;
 
 
 div.sub {
-position: relative;
+position: absolute;
+bottom: 0;
 background-color: rgba(4,30,66,1);
 color: white;
 width: 150px;
 text-align: center;
 padding-top: 10px;
 padding-bottom: 10px;
+left: 50px;
 }
 
 div#footerText {
@@ -875,7 +853,8 @@ margin-bottom: 25px;
 .rotating-item {
 	display: none;
   position: absolute;
-  width: 66%;
+  width: 60%;
+  z-index: -1;
   }
 
   div#instagramTitle {
@@ -884,4 +863,86 @@ margin-left: 59%;
 padding: 20px;
 font-family: 'Quicksand', sans-serif;
 font-size: 20px;
+}
+
+footer {
+position: absolute;
+bottom: -120px;
+padding-top: -4px;
+}
+
+div#windowCenter {
+margin-top: 100px;
+width: 100%;
+display: flex;
+}
+
+#borderHolder img {
+width: 100%;
+}
+
+img.border {
+width: 100%;
+}
+
+div#Holder {
+margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
