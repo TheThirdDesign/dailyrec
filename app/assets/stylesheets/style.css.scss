@@ -386,6 +386,13 @@ font-family: 'PT Sans', sans-serif;
 input:focus {outline:none;}
 textarea:focus {outline:none;}
 
+input#user_name {
+color: black;
+}
+input#user_email {
+color: black;
+}
+
 input {
   // border: 3px solid grey;
   color: black;
