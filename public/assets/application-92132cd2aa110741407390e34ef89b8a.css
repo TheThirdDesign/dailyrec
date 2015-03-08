@@ -896,7 +896,7 @@ li.drop {
 
 /* line 1057, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .instaTitle2 {
-  width: 60%;
+  width: 27%;
   margin-left: 59%;
   padding: 20px;
   font-family: 'Lato', sans-serif;
@@ -1005,3 +1005,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ 
+
+
+
+ */
+
