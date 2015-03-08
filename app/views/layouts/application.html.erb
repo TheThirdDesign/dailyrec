@@ -6,7 +6,7 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <%= stylesheet_link_tag "style" %>
 </head>
 <body>
   <div id="window">
@@ -88,7 +88,7 @@
 
 $(document).ready(function(){
   $("#blog a").mouseover(function(){
-   $(".blogUL").stop().fadeIn("slow");
+   $(".blogUL").stop().stop().fadeIn("slow");
  });
 });
 
@@ -100,7 +100,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
    $("#about a").mouseover(function(){
-    $(".aboutUL").stop().fadeIn("slow");
+    $(".aboutUL").stop().stop().fadeIn("slow");
    });
    });
 
