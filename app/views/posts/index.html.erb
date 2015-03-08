@@ -1,13 +1,11 @@
 
-<div id="header">
-  <div id="title1">Blog</div>
-</div>
+
 <div id="listings">Blog Coming Soon!</div>
-  <div id="holder2">
-    <div id="instagramTitle2">INSTAGRAM @THEDAILYREC</div>
-    <div id="instagramHolder2">
+  <div class="wrap mobile">
+    <div class="instaTitle2 mobile">INSTAGRAM @THEDAILYREC</div>
+    <div class="instaHolder2 mobile">
       <% @images.each do |image| %>
-      <div class="instagram2">
+      <div class="insta2 mobile">
         <img src="<%= image %>">
       </div>
       <% end %>
