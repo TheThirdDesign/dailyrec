@@ -655,7 +655,12 @@ font-family: 'PT Sans', sans-serif;
 li#logo {
 width: 40%;
 margin-top: -2px;
-display: flex;
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+
 height: 100px;
 
 }
@@ -870,7 +875,12 @@ left: 0;
 margin-top: 10px;
 padding-bottom: 100px;
 font-family: 'Lato', sans-serif;
-  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+
 }
 
 div#copyright2 {
@@ -1061,7 +1071,12 @@ padding-top: -4px;
 div#windowCenter {
 margin-top: 100px;
 width: 100%;
-display: flex;
+display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+
 }
 
 #borderHolder2 img {
