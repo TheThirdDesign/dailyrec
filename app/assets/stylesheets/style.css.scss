@@ -294,13 +294,23 @@ div#contact.quarter {
 
   }
 
-  .instaTitle2.mobile {
-  width: 77%;
-  margin-left: 14%;
+.instaTitle2.mobile {
+  width: 38%;
+  margin-left: 46%;
   padding: 20px;
+  padding-bottom: 5px;
   font-family: 'Lato', sans-serif;
   font-size: 17px;
-  }
+}
+
+.instaTitle3.mobile {
+  width: 40%;
+  margin-left: 32%;
+  padding: 20px;
+  padding-top: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
 
 .aboutImage1.mobile {
   height: 415px;
