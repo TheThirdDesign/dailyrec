@@ -131,6 +131,38 @@ $(window).bind('scroll', function() {
    }
 });
 
+$(window).bind('scroll', function() {
+  if($(window).width() <= 1075 || $(window).width() >= 768) {
+     if ($(window).scrollTop() > 7) {
+         $('ul#menu').css("display", "flex")
+         $('ul#menu').css("display", "-webkit-box")
+         $('ul#menu').css("display", "-moz-box")
+         $('ul#menu').css("display", "-ms-flexbox")
+         $('ul#menu').css("display", "-webkit-flex")
+         $('.navbar.navbar-default').css("position","fixed")
+         $('#aboutUs').css("margin-top","100px")
+         $('#header').css("margin-top","100px")
+         $('#middle1').css("margin-top","100px")
+         $('.navbar.navbar-default').css("top","0")
+         $('.navbar.navbar-default').css("z-index","1")
+         $('.navbar.navbar-default').css("background-color","white")
+         $('.navbar.navbar-default').css("width","98%")
+         $('.navbar.navbar-default').css("box-shadow","0 4px 2px -2px gray")
+     }
+     else {
+       $('#aboutUs').css("margin-top","0px")
+       $('#header').css("margin-top","0px")
+       $('#middle1').css("margin-top","0px")
+      //  $('.navbar.navbar-default').css("height","100px")
+       $('ul#menu').css("width", "80%")
+       $('.navbar.navbar-default').css("position","relative")
+       $('.navbar.navbar-default').css("width","100%")
+        $('.navbar.navbar-default').css("box-shadow","none")
+     }
+   }
+});
+
+
 $(document).ready(function(){
   $("#blog a").mouseover(function(){
    $(".blogUL").stop().stop().fadeIn("slow");
