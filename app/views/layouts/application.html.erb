@@ -55,7 +55,7 @@
       </nav>
 
       <div id="mobileLogo">
-        <%= image_tag 'Brooke_WebBanner-02.png'%>
+        <%= image_tag 'Brooke_WebBanner-01.png'%>
       </div>
       <div class="socialMobile">
         <a href="http://www.pinterest.com/thedailyrec/"><%= image_tag 'pinterest.png'%></a>
@@ -92,7 +92,7 @@ $(window).bind('scroll', function() {
   if($(window).width() >= 1075) {
      if ($(window).scrollTop() > 7) {
        $('ul#menu li.link.nonlogo1').css("width","25%")
-         $('li#logo').fadeOut(1000);
+        //  $('li#logo').fadeOut(1000);
          $('ul#menu').css("width", "60%")
          $('ul#menu').css("display", "flex")
          $('ul#menu').css("display", "-webkit-box")
@@ -107,7 +107,7 @@ $(window).bind('scroll', function() {
          $('.navbar.navbar-default').css("z-index","1")
          $('.navbar.navbar-default').css("background-color","white")
          $('.navbar.navbar-default').css("width","98%")
-         $('.navbar.navbar-default').css("box-shadow","0 4px 2px -2px gray")
+         $('#navbar-collapse-1').css("padding-bottom","10px")
         //  $('ul#menu').css("height","100px")
         //  $('ul#menu').css("background-color","white")
         //  $('ul#menu').css("z-index","1")
@@ -121,8 +121,8 @@ $(window).bind('scroll', function() {
        $('ul#menu').css("width", "80%")
        $('.navbar.navbar-default').css("position","relative")
        $('.navbar.navbar-default').css("width","100%")
-        $('.navbar.navbar-default').css("box-shadow","none")
-         $('li#logo').fadeIn();
+
+        //  $('li#logo').fadeIn();
 
 
 
@@ -148,7 +148,7 @@ $(window).bind('scroll', function() {
          $('.navbar.navbar-default').css("z-index","1")
          $('.navbar.navbar-default').css("background-color","white")
          $('.navbar.navbar-default').css("width","98%")
-         $('.navbar.navbar-default').css("box-shadow","0 4px 2px -2px gray")
+
      }
      else {
        $('#aboutUs').css("margin-top","0px")
@@ -158,7 +158,6 @@ $(window).bind('scroll', function() {
        $('ul#menu').css("width", "80%")
        $('.navbar.navbar-default').css("position","relative")
        $('.navbar.navbar-default').css("width","100%")
-        $('.navbar.navbar-default').css("box-shadow","none")
      }
    }
  }
