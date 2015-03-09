@@ -10,7 +10,8 @@
   <%= stylesheet_link_tag "style" %>
 </head>
 <body>
-  <div id="window">
+<div id="window">
+
       <nav class="navbar navbar-default" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -27,7 +28,7 @@
 
           <ul class="nav navbar-nav navbar-left new here menu" id="menu">
             <li id="home" class="link nonlogo1 quarter mobile">
-              <%= link_to "HOME", { controller: "home", action: "index" } %>
+              <a href="https://sleepy-everglades-3369.herokuapp.com/">HOME</a>
             </li>
             <li id="about" class="link nonlogo1 quarter mobile">
               <a href="#">BROOKE WAHL</a>
@@ -86,6 +87,43 @@
 // $(document).ready(function() {
 //     $('.menu').dropit();
 // });
+
+$(window).bind('scroll', function() {
+  if($(window).width() >= 1075) {
+     if ($(window).scrollTop() > 7) {
+       $('ul#menu li.link.nonlogo1').css("width","25%")
+         $('li#logo').fadeOut("slow");
+         $('ul#menu').css("width", "60%")
+         $('ul#menu').css("display", "flex")
+         $('ul#menu').css("display", "-webkit-box")
+         $('ul#menu').css("display", "-moz-box")
+         $('ul#menu').css("display", "-ms-flexbox")
+         $('ul#menu').css("display", "-webkit-flex")
+         $('.navbar.navbar-default').css("position","fixed")
+         $('.navbar.navbar-default').css("top","0")
+         $('.navbar.navbar-default').css("height","100px")
+         $('.navbar.navbar-default').css("z-index","1")
+         $('.navbar.navbar-default').css("background-color","white")
+         $('.navbar.navbar-default').css("width","98%")
+
+        //  $('ul#menu').css("height","100px")
+        //  $('ul#menu').css("background-color","white")
+        //  $('ul#menu').css("z-index","1")
+     }
+     else {
+       $('ul#menu li.link.nonlogo1').css("width","15%")
+       $('.navbar.navbar-default').css("height","100px")
+       $('ul#menu').css("width", "80%")
+       $('.navbar.navbar-default').css("position","relative")
+       $('.navbar.navbar-default').css("width","100%")
+         $('li#logo').fadeIn();
+
+
+
+        //  $('ul#menu').css("height","100px")
+     }
+   }
+});
 
 $(document).ready(function(){
   $("#blog a").mouseover(function(){

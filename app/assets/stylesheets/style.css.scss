@@ -7,6 +7,12 @@ nav.navbar.navbar-default {
 border: none;
 }
 
+@media all and (min-width: 768px) {
+.navbar-collapse.collapse {
+  display: flex!important;
+}
+}
+
 @media all and ( min-width: 1075px) {
   #mobileLogo img {
     display: none;
@@ -15,6 +21,24 @@ border: none;
   div.socialMobile {
     display: none;
   }
+
+  .navbar-left {
+  height: 100px;
+  margin: auto;
+  width: 80%;
+}
+
+div#navbar-collapse-1 {
+  background-color: white;
+  width: 100%;
+  display: flex!important;
+}
+
+nav.navbar.navbar-default {
+  border: none;
+  display: flex;
+}
+
 }
 
 @media all and ( max-width: 1075px )
@@ -105,6 +129,15 @@ margin-bottom: 75px;
   width: 78%;
   margin: auto;
   }
+
+  .navbar-left {
+  height: 100px;
+  margin: auto;
+}
+
+ul#menu {
+  width: 80%;
+}
 
 }
 
@@ -229,7 +262,7 @@ margin-bottom: 75px;
   }
 
   .instaTitle2.mobile {
-  width: 91%;
+  width: 77%;
   margin-left: 14%;
   padding: 20px;
   font-family: 'Lato', sans-serif;
@@ -261,6 +294,13 @@ margin-bottom: 75px;
   padding: 5px;
 }
 
+ul#menu {
+  width: 100%;
+}
+
+div#copyright2 {
+  width: 75%;
+}
 
 }
 
@@ -639,11 +679,12 @@ margin-bottom: 30px;
 
 div#navbar-collapse-1 {
 border: none;
+  background-color: white;
+  width: 100%;
 }
 
 ul.nav.navbar-nav.navbar-left {
-width: 80%;
-margin-left: 10%;
+
 }
 
 li.link.nonlogo1 {
@@ -875,12 +916,7 @@ left: 0;
 margin-top: 10px;
 padding-bottom: 100px;
 font-family: 'Lato', sans-serif;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;
-
+  display: flex;
 }
 
 div#copyright2 {
@@ -925,7 +961,7 @@ background-color: white;
 .social1 {
 position: fixed;
 right: 28px;
-top: 130px;
+top: 200px;
 width: 21px;
 }
 
@@ -996,7 +1032,8 @@ width: 50%;
 border-bottom: 1px solid grey;
 margin: auto;
 padding: 5px;
-margin-bottom: 11px;
+margin-bottom: 20px;
+
 }
 
 .blogUL {
@@ -1055,7 +1092,7 @@ margin-bottom: 25px;
   }
 
   .instaTitle2 {
-width: 27%;
+width: 40%;
 margin-left: 59%;
 padding: 20px;
 font-family: 'Lato', sans-serif;
@@ -1071,12 +1108,7 @@ padding-top: -4px;
 div#windowCenter {
 margin-top: 100px;
 width: 100%;
-display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;
-
+display: flex;
 }
 
 #borderHolder2 img {
@@ -1095,8 +1127,13 @@ li.link.nonlogo1 a:hover {
 color: lightblue;
 }
 
+div#titleContact {
+  margin: 20px;
+}
 
-
+div#phoneContact {
+  margin: 20px;
+}
 
 
 
