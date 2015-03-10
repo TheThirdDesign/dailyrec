@@ -1,8 +1,10 @@
 class PostsController < ApplicationController
 def index
+  binding.pry
     if params["type"] == "favorites"
       @posts = Post.where(category: "favorites").order("created_at DESC")
-
+      @count = params["count"].to_i
+      binding.pry
       response = HTTParty.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=1678934706.7497432.f3048715df0940b69ed625db492c45f5')
       @response = response["data"]
       @images = []
@@ -16,7 +18,7 @@ def index
     end
   elsif params["type"] == "home"
       @posts = Post.where(category: "home").order("created_at DESC")
-
+      @count = params["count"].to_i
       response = HTTParty.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=1678934706.7497432.f3048715df0940b69ed625db492c45f5')
       @response = response["data"]
       @images = []
@@ -30,7 +32,7 @@ def index
     end
   elsif params["type"] == "stories"
         @posts = Post.where(category: "stories").order("created_at DESC")
-
+        @count = params["count"].to_i
         response = HTTParty.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=1678934706.7497432.f3048715df0940b69ed625db492c45f5')
         @response = response["data"]
         @images = []

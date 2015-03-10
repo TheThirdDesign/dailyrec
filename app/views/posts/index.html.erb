@@ -11,7 +11,14 @@
     <div id="title1">At Home</div>
   </div>
 <% end %>
-<% @posts.each do |post| %>
+
+<% if @posts.empty? %>
+  <div id="listings">There are no posts for this blog yet!</div>
+<% end %>
+<% @start = 0 + @count %>
+<% @counter = 3 + @count %>
+<% binding.pry %>
+<% @posts[@start..@counter].each do |post| %>
   <% if post.layout == "pictureLeft" %>
     <div id="layout1" class="post">
         <div id="left" class="layout1">
@@ -76,8 +83,16 @@
     </div>
   <% end %>
 <% end %>
-
-
+<% @newCounterMore = @counter + 1 %>
+<% @newCounterless = @counter - @count %>
+<div id="moreLess">
+  <div id="older" class=".blogButton">
+  <%= link_to "SEE OLDER POSTS", :type => params["type"], :count => @newCounterMore  %>
+</div>
+<div id="newer" class=".blogButton">
+  <%= link_to "SEE NEWER POSTS", :type => params["type"], :count => @newCounterLess  %>
+</div>
+</div>
 
 
   <div class="wrap mobile">

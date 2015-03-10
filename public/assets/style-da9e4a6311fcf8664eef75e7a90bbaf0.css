@@ -1758,11 +1758,64 @@ li#addPost:hover {
   background-color: lightskyblue;
 }
 
+/* line 1808, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#older {
+  float: left;
+  width: 50%;
+  display: flex;
+}
+
+/* line 1814, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#older a {
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  background-color: #041e42;
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 1823, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#newer {
+  float: left;
+  width: 50%;
+  display: flex;
+}
+
+/* line 1829, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#newer a {
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  background-color: #041e42;
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 1838, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#moreLess {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 70px;
+}
+
+/* line 1846, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#older a:hover {
+  background-color: lightskyblue;
+}
+
+/* line 1850, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#newer a:hover {
+  background-color: lightskyblue;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 1812, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1859, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1785,35 +1838,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 1833, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1880, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 1837, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1884, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 body {
   line-height: 1;
 }
 
-/* line 1840, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1887, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 1843, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1890, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 1846, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1893, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 1851, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1898, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;

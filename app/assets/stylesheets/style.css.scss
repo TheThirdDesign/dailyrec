@@ -1804,6 +1804,53 @@ li#addPost a {
 li#addPost:hover {
   background-color: lightskyblue;
 }
+
+div#older {
+  float: left;
+  width: 50%;
+  display: flex;
+}
+
+div#older a {
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(4,30,66,1);
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+div#newer {
+  float: left;
+  width: 50%;
+  display: flex;
+}
+
+div#newer a {
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(4,30,66,1);
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+div#moreLess {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 70px;
+}
+
+div#older a:hover {
+  background-color: lightskyblue;
+}
+
+div#newer a:hover {
+  background-color: lightskyblue;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
