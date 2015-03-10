@@ -1,0 +1,54 @@
+<div id="form1">
+  <%= form_for @post do |f| %>
+       <%= f.label :title %>
+       </br>
+       <%= f.text_field :title %>
+       </br>
+       <%= f.label :date %>
+       </br>
+       <%= f.text_field :date %>
+       </br>
+       <%= f.label :teaser %>
+       </br>
+       <%= f.text_area :teaser %>
+       </br>
+       <%= f.label :content %>
+       </br>
+       <%= f.text_area :content %>
+       </br>
+       <%= f.label :pictures %>
+       </br>
+       <%= f.text_field :pictures %>
+       </br>
+       <%= f.radio_button :category, 'favorites', :checked => true %>
+       <%= f.label :category_favorites, 'Current Favorites' %>
+       <%= f.radio_button :category, 'stories' %>
+       <%= f.label :category_stories, 'Stories' %>
+       <%= f.radio_button :category, 'home' %>
+       <%= f.label :category_home, 'At Home' %>
+    <div id="layoutHolder">
+     <div class="radioHolder">
+       <%= f.radio_button :layout, 'pictureLeft', :checked => true %>
+       <%= f.label :layout_pictureLeft, 'Picture on Left' %>
+       <%= image_tag 'PictureLeft.png'%>
+     </div>
+     <div class="radioHolder">
+       <%= f.radio_button :layout, 'horizontalPicture' %>
+       <%= f.label :layout_horizontalPicture, 'Picture Horizontal' %>
+       <%= image_tag 'horizontalTop.png'%>
+       </div>
+       <div class="radioHolder">
+       <%= f.radio_button :layout, 'threePics' %>
+       <%= f.label :layout_threePics, '3 Pictures On Top' %>
+       <%= image_tag 'threeonTop.png'%>
+       </div>
+       <div class="radioHolder">
+       <%= f.radio_button :layout, 'pictureRight' %>
+       <%= f.label :layout_pictureRight, 'Picture on Right' %>
+       <%= image_tag 'PictureRight.png'%>
+     </div>
+   </div>
+   <div id="formButtonHolder">
+      <%= f.submit "Send" %>
+    </div>
+      <% end %>

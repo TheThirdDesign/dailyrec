@@ -680,7 +680,6 @@ margin-bottom: 30px;
 margin-top: 80px;
 font-size: 30px;
 color: rgba(4,30,66,0.8);
-border-bottom: 1px solid rgba(4,30,66,0.8);
 font-family: 'Quicksand', sans-serif;
 }
 
@@ -1197,11 +1196,384 @@ div#phoneContact {
   margin: 20px;
 }
 
+/* layout1 */
+div#layout1 {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  height: 675px;
+}
 
+div#left {
+  float: left;
+  width: 50%;
+  padding-right: 20px;
+  border-right: 1px solid rgba(4,30,66,1);
+  padding-top: 20px;
+  border-top: 1px solid rgba(4,30,66,1);
+}
 
+div#leftImage {
+  width: 100%;
+}
 
+div#leftImage img {
+  width: 100%;
+}
 
+div#right {
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(4,30,66,1);
+}
 
+.layout1.info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #041e42;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+div#postButton1 {
+  margin-top: 10px;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  /* border: 1px solid grey; */
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  background-color: rgba(4,30,66,1);
+  text-decoration: none;
+  color: white;
+}
+
+div#postButton1 a {
+  text-decoration: none;
+  color: white;
+}
+
+div#postTitle1 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.layout4.info {
+  text-align: center;
+}
+
+/* layout2 */
+div#layout2 {
+  width: 70%;
+  margin: auto;
+  height: 875px;
+}
+
+div#top2 img {
+  width: 100%;
+}
+
+div#top {
+  width: 100%;
+  display: flex;
+  height: 587px;
+  margin-top: 75px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(4,30,66,1);
+}
+
+div#top img {
+  width: 100%;
+  margin: auto;
+}
+
+div#bottom {
+  width: 100%;
+  margin-top: 20px;
+}
+
+div#bottomLeft {
+  width: 50%;
+  float: left;
+}
+
+div#postBlurb2 {
+  text-align: right;
+  padding-right: 20px;
+  border-right: 1px solid #041e42;
+  padding-top: 20px;
+  border-top: 1px solid #041e42;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  line-height: 25px;
+}
+
+div#bottomRight {
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(4,30,66,1);
+  font-family: 'Lato', sans-serif;
+}
+
+div#postTitle2 {
+  border-bottom: 1px solid rgba(4,30,66,1);
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+div#postDate2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(4,30,66,1);
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+div#postButton2 {
+  margin-top: 10px;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  /* border: 1px solid grey; */
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  background-color: rgba(4,30,66,1);
+  text-decoration: none;
+  color: white;
+}
+
+div#postButton2 a {
+  text-decoration: none;
+  color: white;
+}
+
+div#postButton1.blogButton:hover {
+  background-color: #0DD5FC;
+}
+
+/* layout3 */
+
+div#layout3 {
+  width: 70%;
+  margin: auto;
+  height: 950px;
+}
+
+div#top.layout3 {
+  height: 436px;
+}
+
+img#pic1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(4,30,66,1);
+}
+
+img#pic2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img#pic3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid rgba(4,30,66,1);
+}
+
+div#top.layout3 img {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.layout4.info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(4,30,66,1);
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  line-height: 25px;
+}
+
+div#postButton4 {
+  margin-top: 10px;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  /* border: 1px solid grey; */
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  background-color: #041e42;
+  text-decoration: none;
+  color: white;
+  float: right;
+  width: 50%;
+  margin-right: 25%;
+}
+
+div#postButton4 a {
+  text-decoration: none;
+  color: white;
+}
+
+div#left.layout4 {
+  border-right: none;
+}
+
+div#right.layout4 {
+  border-left: 1px solid rgba(4,30,66,1);
+}
+
+div#layout4 {
+  width: 70%;
+  margin: auto;
+  height: 650px;
+}
+
+textarea#post_content {
+  margin: 0px;
+  width: 696px;
+  height: 419px;
+}
+
+textarea#post_teaser {
+  margin: 0px;
+  width: 697px;
+  height: 92px;
+}
+
+input#post_pictures {
+  width: 696px;
+}
+
+div#postHolder {
+  width: 100%;
+  margin: auto;
+  margin-top: 75px;
+  height: 1500px;
+  display: inline;
+}
+
+div#topImage {
+  margin: auto;
+  display: flex;
+  margin-top: 75px;
+}
+
+div#topImage img {
+  margin: auto;
+  width: 40%;
+}
+
+div#contentArea {
+  margin: auto;
+  width: 48%;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+
+div#showTitle {
+  width: 40%;
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: 1px solid rgba(4,30,66,1);
+}
+
+div#showDateCategory {
+  width: 54%;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: 1px solid rgba(4,30,66,1);
+}
+
+div#showContent {
+  width: 100%;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: 1px solid rgba(4,30,66,1);
+  line-height: 1.5;
+}
+
+div#bottomBuffer {
+  height: 150px;
+}
+
+.instaTitle3 a {
+  text-decoration: none;
+  color: rgba(4,30,66,1);
+}
+
+.instaTitle3 a:hover {
+  color: lightskyblue;
+}
+
+.radioHolder img {
+  width: 92%;
+  padding-top: 14px;
+}
+
+.radioHolder {
+  width: 24%;
+  margin-top: 10px;
+  float: left;
+}
+
+div#layoutHolder {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#new_post input[type="submit"] {
+  width: 25%;
+  padding: 30px;
+  background-color: rgba(4,30,66,1);
+  text-align: center;
+  margin: 20px;
+  color: white;
+  border: none;
+}
+
+#new_post input[type="submit"]:hover {
+  background-color: lightskyblue;
+}
+
+li#addPost {
+  width: 25%;
+  padding: 30px;
+  background-color: rgba(4,30,66,1);
+  text-align: center;
+  margin: 20px;
+}
+
+li#addPost a {
+  color: white;
+  text-decoration: none;
+}
+
+li#addPost:hover {
+  background-color: lightskyblue;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)

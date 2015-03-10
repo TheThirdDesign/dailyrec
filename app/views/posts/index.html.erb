@@ -1,13 +1,93 @@
+<% if params["type"] == "favorites" %>
+  <div id="header">
+    <div id="title1">Current Favorites</div>
+  </div>
+<% elsif params["type"] == "stories" %>
+  <div id="header">
+    <div id="title1">Stories</div>
+  </div>
+<% elsif params["type"] == "home" %>
+  <div id="header">
+    <div id="title1">At Home</div>
+  </div>
+<% end %>
+<% @posts.each do |post| %>
+  <% if post.layout == "pictureLeft" %>
+    <div id="layout1">
+        <div id="left" class="layout1">
+          <div id="leftImage" class="layout1">
+            <img src="<%= post.pictures[0] %>">
+          </div>
+        </div>
+        <div id="right" class="layout1">
+          <div id="postTitle1" class="layout1 info"><%= post.title %></div>
+          <div id="postDate1" class="layout1 info"><%= post.date%></div>
+          <div id="postBlurb1" class="layout1 info"><%= post.teaser %></div>
+          <div id="postButton1" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
+        </div>
+    </div>
+  <% elsif post.layout == "horizontalPicture"%>
+    <div id="layout2">
+      <div id="top2" class="layout2">
+        <img src="<%= post.pictures[0] %>">
+      </div>
+      <div id="bottom" class="layout2">
+        <div id="bottomLeft" class="layout2">
+          <div id="postBlurb2" class="layout2 info"><%= post.teaser %></div>
+        </div>
+        <div id="bottomRight" class="layout2">
+          <div id="postTitle2" class="layout2 info"><%= post.title %></div>
+          <div id="postDate2" class="layout2 info"><%= post.date%></div>
+          <div id="postButton1" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
+        </div>
+      </div>
+    </div>
+  <% elsif post.layout == "threePics" %>
+  <div id="layout3">
+    <div id="top" class="layout3">
+      <img id="pic1" src="<%= post.pictures[0] %>">
+      <img id="pic2" src="<%= post.pictures[1] %>">
+      <img id="pic3" src="<%= post.pictures[2] %>">
+    </div>
+    <div id="bottom" class="layout2">
+      <div id="bottomLeft" class="layout2">
+        <div id="postBlurb2" class="layout2 info"><%= post.teaser %></div>
+      </div>
+      <div id="bottomRight" class="layout2">
+        <div id="postTitle2" class="layout2 info"><%= post.title %></div>
+        <div id="postDate2" class="layout2 info"><%= post.date%></div>
+        <div id="postButton1" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
+      </div>
+    </div>
+  </div>
+  <% elsif post.layout == "pictureRight" %>
+    <div id="layout4">
+        <div id="left" class="layout4">
+          <div id="postTitle1" class="layout4 info"><%= post.title %></div>
+          <div id="postDate1" class="layout4 info"><%= post.date%></div>
+          <div id="postBlurb1" class="layout4 info"><%= post.teaser %></div>
+          <div id="postButton4" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
+        </div>
+        <div id="right" class="layout4">
+          <div id="leftImage" class="layout1">
+            <img src="<%= post.pictures[0] %>">
+          </div>
+        </div>
+    </div>
+  <% end %>
+<% end %>
 
 
-<div id="listings">Blog Coming Soon!</div>
+
+
   <div class="wrap mobile">
     <div class="instaTitle2 mobile">INSTAGRAM </div>
-    <div class="instaTitle3 mobile">@THEDAILYREC</div>
+    <div class="instaTitle3 mobile"><a href="http://www.instagram.com/thedailyrec">@THEDAILYREC</a></div>
     <div class="instaHolder2 mobile">
       <% @images.each do |image| %>
       <div class="insta2 mobile">
         <img src="<%= image %>">
       </div>
       <% end %>
+    </div>
     </div>

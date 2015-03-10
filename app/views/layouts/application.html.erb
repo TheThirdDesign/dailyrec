@@ -44,9 +44,9 @@
             <li id="blog" class="link nonlogo1 quarter mobile">
               <a href="#">LIFESTYLE</a>
               <ul class="blogUL">
-                <li class="drop"><%= link_to "CURRENT FAVORITES", { controller: "posts", action: "index" } %></li>
-                <li class="drop"><%= link_to "STORIES", { controller: "posts", action: "index" } %></li>
-                <li class="drop"><%= link_to "AT HOME", { controller: "posts", action: "index" } %></li>
+                <li class="drop"><%= link_to "CURRENT FAVORITES", { controller: "posts", action: "index", type: "favorites" } %></li>
+                <li class="drop"><%= link_to "STORIES", { controller: "posts", action: "index", type: "stories" } %></li>
+                <li class="drop"><%= link_to "AT HOME", { controller: "posts", action: "index", type: "home" } %></li>
               </ul>
             </li>
             </li>
