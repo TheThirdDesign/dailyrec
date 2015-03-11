@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   resources :listings
   resources :posts
   resources :users
+  resources :drafts
   resources :admins do
+    resources :drafts
     resources :posts
   end
 

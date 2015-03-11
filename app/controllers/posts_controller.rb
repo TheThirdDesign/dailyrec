@@ -87,6 +87,12 @@ def index
     redirect_to '/admin'
   end
 
+  def destroy
+    post = Post.find_by(id: params[:id])
+    post.destroy
+    redirect_to '/admin'
+  end
+
   def new
     @post = Post.new
     render :layout => 'admins'

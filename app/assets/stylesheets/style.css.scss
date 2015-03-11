@@ -1688,13 +1688,29 @@ textarea#post_content {
   height: 419px;
 }
 
+textarea#draft_content {
+  margin: 0px;
+  width: 696px;
+  height: 419px;
+}
+
 textarea#post_teaser {
   margin: 0px;
   width: 697px;
   height: 92px;
 }
 
+textarea#draft_teaser {
+  margin: 0px;
+  width: 697px;
+  height: 92px;
+}
+
 input#post_pictures {
+  width: 696px;
+}
+
+input#draft_pictures {
   width: 696px;
 }
 
@@ -1788,6 +1804,7 @@ div#bottomBuffer {
 div#layoutHolder {
   margin-top: 25px;
   margin-bottom: 25px;
+  height: 304px;
 }
 
 #new_post input[type="submit"] {
@@ -1885,6 +1902,15 @@ div#newer a:hover {
 
 div#search {
   padding-right: 23px;
+}
+
+div#heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+div#formButtonHolder input[type="submit"] {
+  margin-bottom: 200px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/

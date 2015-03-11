@@ -1,5 +1,6 @@
+
 <div id="form1">
-  <%= form_for @post do |f| %>
+  <%= form_for @draft do |f| %>
        <%= f.label :title %>
        </br>
        <%= f.text_field :title %>
@@ -49,7 +50,11 @@
      </div>
    </div>
    <div id="formButtonHolder">
-     <%= f.submit "Send" %>
+       <% if params["type"] == 'save' %>
+        <%= f.submit "SAVE" %>
+        <% elsif params["type"] == 'publish'%>
+        <%= f.submit "PUBLISH" %>
+        <% end %>
       <% end %>
-      </div>
+</div>
 </div>
