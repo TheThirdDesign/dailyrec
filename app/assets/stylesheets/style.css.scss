@@ -570,6 +570,22 @@ div#layout1 {
   margin-top: 50px;
   height: 910px;
 }
+
+.search.mobile {
+  position: fixed;
+  left: 33px;
+  top: 33px;
+  padding-right: 28px;
+  color: #041e42;
+  font-size: 12px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  z-index: 10;
+}
+
+.search.mobile form {
+  margin-top: 10px;
+}
 }
 
 // @media only screen
@@ -1849,6 +1865,26 @@ div#older a:hover {
 
 div#newer a:hover {
   background-color: lightskyblue;
+}
+
+.search {
+  position: fixed;
+  right: 0;
+  top: 46px;
+  padding-right: 28px;
+  color: #041e42;
+  font-size: 12px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: right;
+  z-index: 10;
+}
+
+.search form {
+  display: none;
+}
+
+div#search {
+  padding-right: 23px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/

@@ -1,3 +1,5 @@
+<% binding.pry %>
+
 <% if params["type"] == "favorites" %>
   <div id="header">
     <div id="title1">Current Favorites</div>
@@ -10,14 +12,17 @@
   <div id="header">
     <div id="title1">At Home</div>
   </div>
+<% elsif params["search"].present? %>
+  <div id="header">
+    <div id="title1">Search Results</div>
+  </div>
 <% end %>
 
 <% if @posts.empty? %>
   <div id="listings">There are no posts for this blog yet!</div>
 <% end %>
 <% @start = 0 + @count %>
-<% @counter = 3 + @count %>
-<% binding.pry %>
+<% @counter = 4 + @count %>
 <% @posts[@start..@counter].each do |post| %>
   <% if post.layout == "pictureLeft" %>
     <div id="layout1" class="post">
@@ -86,13 +91,18 @@
 <% @newCounterMore = @counter + 1 %>
 <% @newCounterless = @counter - @count %>
 <div id="moreLess">
+<% if @newCounterMore < @posts.length %>
   <div id="older" class=".blogButton">
   <%= link_to "SEE OLDER POSTS", :type => params["type"], :count => @newCounterMore  %>
-</div>
-<div id="newer" class=".blogButton">
+  </div>
+<% end %>
+<% if @start > 0 %>
+  <div id="newer" class=".blogButton">
   <%= link_to "SEE NEWER POSTS", :type => params["type"], :count => @newCounterLess  %>
+  </div>
+<% end %>
 </div>
-</div>
+
 
 
   <div class="wrap mobile">

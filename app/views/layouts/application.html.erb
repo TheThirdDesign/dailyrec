@@ -70,6 +70,12 @@
       <div class="sub">
         <%= link_to "SUBSCRIBE", new_user_path %>
       </div>
+      <div class="search mobile">
+        <div id="search"><%= image_tag 'search2.png' %></div>
+        <form action="/search" method="get" accept-charset="UTF-8" >
+          <input type="text" type="hidden" name="search" use="search"></input>
+        </form>
+      </div>
 
         <%= yield %>
 
@@ -165,6 +171,17 @@ $(window).bind('scroll', function() {
  }
 });
 
+$(document).ready(function(){
+  $(".search").mouseover(function(){
+   $("form").stop().stop().fadeIn("slow");
+ });
+});
+
+$(document).ready(function(){
+  $(".search").mouseout(function(){
+   $("form").stop().stop().fadeOut("slow");
+ });
+});
 
 $(document).ready(function(){
   $("#blog a").mouseover(function(){
