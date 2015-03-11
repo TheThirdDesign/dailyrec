@@ -19,7 +19,11 @@
 <% end %>
 
 <% if @posts.empty? %>
-  <div id="listings">There are no posts for this blog yet!</div>
+  <% if params["search"].present? %>
+    <div id="listings">No results came up for your search</div>
+  <% else %>
+    <div id="listings">There are no posts for this blog yet!</div>
+  <% end %>
 <% end %>
 <% @start = 0 + @count %>
 <% @counter = 4 + @count %>
