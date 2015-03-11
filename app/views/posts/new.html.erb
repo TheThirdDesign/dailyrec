@@ -19,6 +19,7 @@
        <%= f.label :pictures %>
        </br>
        <%= f.text_field :pictures %>
+       <%= f.hidden_field :admin_id, :value => session[:admin_id] %>
        </br>
        <%= f.radio_button :category, 'favorites', :checked => true %>
        <%= f.label :category_favorites, 'Current Favorites' %>
@@ -36,13 +37,13 @@
        <%= f.radio_button :layout, 'horizontalPicture' %>
        <%= f.label :layout_horizontalPicture, 'Picture Horizontal' %>
        <%= image_tag 'horizontalTop.png'%>
-       </div>
-       <div class="radioHolder">
+      </div>
+      <div class="radioHolder">
        <%= f.radio_button :layout, 'threePics' %>
        <%= f.label :layout_threePics, '3 Pictures On Top' %>
        <%= image_tag 'threeonTop.png'%>
-       </div>
-       <div class="radioHolder">
+      </div>
+      <div class="radioHolder">
        <%= f.radio_button :layout, 'pictureRight' %>
        <%= f.label :layout_pictureRight, 'Picture on Right' %>
        <%= image_tag 'PictureRight.png'%>

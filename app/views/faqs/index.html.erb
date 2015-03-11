@@ -1,0 +1,30 @@
+<div id="header">
+  <div id="title1">FAQ</div>
+</div>
+
+<% if @faqs.empty? %>
+<div id="listings">FAQ Coming Soon!</div>
+<% else %>
+
+<div id="faqSection">
+  <% @faqs.each do |faq| %>
+  <div id="faqHolder">
+    <div id="question"><%= faq.question %></div>
+    <div id="answer"><%= faq.answer %></div>
+  </div>
+  <% end %>
+</div>
+<% end %>
+
+
+<div class="wrap mobile">
+  <div class="instaTitle2 mobile">INSTAGRAM </div>
+  <div class="instaTitle3 mobile"><a href="http://www.instagram.com/thedailyrec">@THEDAILYREC</a></div>
+  <div class="instaHolder2 mobile">
+    <% @images.each do |image| %>
+    <div class="insta2 mobile">
+      <img src="<%= image %>" data-pin-hover="true">
+    </div>
+    <% end %>
+  </div>
+  </div>

@@ -2,8 +2,9 @@ class AdminsController < ApplicationController
 
     def index
       if session[:admin_id]
-        @drafts = Draft.all
+        @drafts = Draft.where(admin_id: session[:admin_id])
         @posts = Post.all
+        @faqs = Faq.all
       else
         redirect_to '/admin/login'
       end

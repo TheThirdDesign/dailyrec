@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   resources :users
   resources :drafts
   resources :session
+  resources :faqs
   resources :admins do
     resources :drafts
     resources :posts
+    resources :faqs
   end
 
   get '/aboutus' => 'home#show'

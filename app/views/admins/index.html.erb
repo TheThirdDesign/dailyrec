@@ -25,3 +25,16 @@
       <div class="col-md-1"><%= link_to "DELETE", post_path(post.id), :method => 'delete' %></div>
     </div>
   <% end %>
+
+</br>
+</br>
+</br>
+
+<div id="heading">LIVE FAQ</div>
+  <% @faqs.each do |post| %>
+    <div class="row">
+      <div class="col-md-3"><%= post.question %></div>
+      <div class="col-md-1"><%= link_to "EDIT", edit_faq_path(post.id) %></div>
+      <div class="col-md-1"><%= link_to "DELETE", faq_path(post.id), :method => 'delete' %></div>
+    </div>
+  <% end %>

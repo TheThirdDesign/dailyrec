@@ -61,7 +61,7 @@ class DraftsController < ApplicationController
 
   private
     def draft_params
-      params.require(:draft).permit(:title, :date, :teaser, :content, :pictures, :category, :layout)
+      params.require(:draft).permit(:title, :date, :teaser, :content, :pictures, :admin_id, :category, :layout)
     end
 
 end

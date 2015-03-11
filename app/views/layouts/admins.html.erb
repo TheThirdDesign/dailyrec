@@ -14,12 +14,15 @@
   <div class="container">
     <div class="row">
       <ul class="col-md-12">
-        <li id="addPost"><%= link_to "NEW POST", new_draft_path %></li>
-        <li class="pull-right"><form method="POST" action="/session">
+        <li id="addPost" class="col-md-4"><%= link_to "NEW POST", new_draft_path %></li>
+        <li id="addPost" class="col-md-4"><%= link_to "NEW FAQ", new_faq_path %></li>
+        <li id="addPost" class="pull-right col-md-4">
+          <form method="POST" action="/session">
             <input name="authenticity_token" value="<%= form_authenticity_token() %>" type="hidden">
             <input name="_method" value="DELETE" type="hidden">
             <button>LOGOUT</button>
-          </form></li>
+          </form>
+        </li>
       </ul>
     </div>
 

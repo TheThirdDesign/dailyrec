@@ -124,6 +124,6 @@ def index
 
   private
     def post_params
-      params.require(:post).permit(:title, :date, :teaser, :content, :pictures, :category, :layout)
+      params.require(:post).permit(:title, :date, :teaser, :content, :admin_id, :pictures, :category, :layout)
     end
 end
