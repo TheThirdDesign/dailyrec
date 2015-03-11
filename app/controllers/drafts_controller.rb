@@ -17,7 +17,7 @@ class DraftsController < ApplicationController
   end
 
   def update
-    binding.pry
+    
     if params[:commit] == "SAVE"
       draft = Draft.find_by(id: params[:id])
       draft.update(draft_params)

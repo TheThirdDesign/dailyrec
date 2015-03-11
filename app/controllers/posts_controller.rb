@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 def index
-  binding.pry
+  
     if params["type"] == "favorites"
       @posts = Post.where(category: "favorites").order("created_at DESC")
       @count = params["count"].to_i
@@ -99,7 +99,7 @@ def index
   end
 
   def create
-    binding.pry
+
     @post = Post.create(post_params)
     redirect_to '/admin'
   end
