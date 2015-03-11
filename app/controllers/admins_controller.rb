@@ -1,6 +1,12 @@
 class AdminsController < ApplicationController
-  def index
-    @drafts = Draft.all
-    @posts = Post.all
-  end
+
+    def index
+      if session[:admin_id]
+        @drafts = Draft.all
+        @posts = Post.all
+      else
+        redirect_to '/admin/login'
+      end
+    end
+
 end

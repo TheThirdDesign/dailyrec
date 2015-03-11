@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :users
   resources :drafts
+  resources :session
   resources :admins do
     resources :drafts
     resources :posts
@@ -14,6 +15,9 @@ Rails.application.routes.draw do
   get '/FAQ' => 'about#show'
   get '/admin' => 'admins#index'
   get '/search' => 'posts#index'
+  get '/admin/login' => 'session#new'
+  post '/session' => 'session#create'
+  delete '/session' => 'session#destroy'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

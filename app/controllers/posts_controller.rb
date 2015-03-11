@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
 def index
-  
     if params["type"] == "favorites"
       @posts = Post.where(category: "favorites").order("created_at DESC")
       @count = params["count"].to_i
@@ -76,32 +75,51 @@ def index
   end
 
   def edit
-    @post = Post.find_by(id: params[:id])
-    render :layout => 'admins'
+    if session[:admin_id]
+      @post = Post.find_by(id: params[:id])
+      render :layout => 'admins'
+    else
+      redirect_to '/admin/login'
+    end
   end
 
   def update
-    post = Post.find_by(id: params[:id])
-    post.update(post_params)
-    post.save
-    redirect_to '/admin'
+    if session[:admin_id]
+      post = Post.find_by(id: params[:id])
+      post.update(post_params)
+      post.save
+      redirect_to '/admin'
+    else
+      redirect_to '/admin/login'
+    end
   end
 
   def destroy
-    post = Post.find_by(id: params[:id])
-    post.destroy
-    redirect_to '/admin'
+    if session[:admin_id]
+      post = Post.find_by(id: params[:id])
+      post.destroy
+      redirect_to '/admin'
+    else
+      redirect_to '/admin/login'
+    end
   end
 
   def new
-    @post = Post.new
-    render :layout => 'admins'
+    if session[:admin_id]
+      @post = Post.new
+      render :layout => 'admins'
+    else
+      redirect_to '/admin/login'
+    end
   end
 
   def create
-
-    @post = Post.create(post_params)
-    redirect_to '/admin'
+    if session[:admin_id]
+      @post = Post.create(post_params)
+      redirect_to '/admin'
+    else
+      redirect_to '/admin/login'
+    end
   end
 
   private
