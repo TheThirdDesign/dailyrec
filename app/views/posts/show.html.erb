@@ -6,7 +6,8 @@
       <div id="showTitle"><%= @post.title %></div>
     </div>
     <div id="contentArea">
-      <div id="showDateCategory"><%= @post.date %> // <%= @post.category%></div>
+      <% @admin = Admin.find_by(id: @post.admin_id)%>
+      <div id="showDateCategory"><%= @post.date %> // <%= @admin.name %></div>
     </div>
     <div id="contentArea">
       <div id="showContent"><%= @post.content %></div>
