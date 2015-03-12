@@ -104,7 +104,7 @@ $(window).resize(function() {
   });
 
 $(window).resize(function() {
-  var width = $(window).width() / 2.17;
+  var width = $(window).width() / 1.43;
   $("#layout2.post").height(width);
   });
 
@@ -117,6 +117,26 @@ $(window).resize(function() {
 $(window).resize(function() {
   var width = $(window).width() / 2.9;
   $("#top.layout3").height(width);
+  });
+}
+
+if ($(window).width() < 768 ) {
+  $(document).ready(function() {
+    $("#right.layout4").css("border-left","none");
+    $("#layout4.post").css("height","908px");
+    $("#layout3.post").css("margin-top","75px");
+    $("#top.layout3").css("height","145px");
+    $("#postBlurb2").css("border-right","none");
+    $("#bottomLeft.layout2").css("width","100%");
+    $("#postBlurb2").css("text-align","center");
+    $("#postBlurb2").css("padding-right","0px");
+    $("#bottomRight.layout2").css("width","100%");
+    $("#postBlurb2.layout2.info").css("padding-right","0px");
+    $("#postBlurb2.layout2.info").css("border-right","none");
+    $("#postBlurb2.layout2.info").css("text-align","center");
+    $("#layout2.post").css("height","700px");
+    $("#bottomRight.layout2").css("padding-left","0px");
+    $("#layout1.post").css("height","925px");
   });
 }
 // $(document).ready(function() {

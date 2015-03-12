@@ -590,6 +590,10 @@ div#layout1 {
 .search.mobile form {
   margin-top: 10px;
 }
+
+div#right.layout4 {
+  border-left: none;
+}
 }
 
 // @media only screen
@@ -1901,11 +1905,11 @@ div#moreLess {
 }
 
 div#older a:hover {
-  background-color: lightskyblue;
+  background-color: #0DD5FC;
 }
 
 div#newer a:hover {
-  background-color: lightskyblue;
+  background-color: #0DD5FC;
 }
 
 .search {
