@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     resources :faqs
   end
 
+  resources :drafts do
+    resources :images
+  end
+
   get '/aboutus' => 'home#show'
   get '/FAQ' => 'about#show'
   get '/admin' => 'admins#index'

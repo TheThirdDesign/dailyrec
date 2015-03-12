@@ -2,6 +2,7 @@ class DraftsController < ApplicationController
   def new
     if session[:admin_id]
       @draft = Draft.new
+      binding.pry
       render :layout => 'admins'
     else
       redirect_to '/admin/login'
@@ -20,7 +21,7 @@ class DraftsController < ApplicationController
   def destroy
     if session[:admin_id]
       draft = Draft.find_by(id: params[:id])
-      draft.destroy
+      draft.delete
       redirect_to '/admin'
     else
       redirect_to '/admin/login'
@@ -46,16 +47,24 @@ class DraftsController < ApplicationController
   end
 
   def create
+
     if session[:admin_id]
+
       if params[:commit] == "SAVE"
         @draft = Draft.create(draft_params)
-        redirect_to '/admin'
+          if @draft.save
+            redirect_to '/admin'
+          else
+            render :new
+          end
       elsif params[:commit] == "PUBLISH"
+        binding.pry
         @post = Post.create(draft_params)
         redirect_to '/admin'
+      else
+        redirect_to '/admin/login'
       end
-    else
-      redirect_to '/admin/login'
+
     end
   end
 

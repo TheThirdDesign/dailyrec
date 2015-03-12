@@ -9,13 +9,13 @@ nav.navbar.navbar-default {
   border: none;
 }
 
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   /* line 11, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
   .navbar-collapse.collapse {
     display: flex !important;
   }
 }
-@media all and (min-width: 1925px) {
+@media screen and (min-width: 1925px) {
   /* line 17, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
   div#layout4 {
     height: 1000px;
@@ -36,7 +36,7 @@ nav.navbar.navbar-default {
     height: 1050px;
   }
 }
-@media all and (min-width: 1800px) {
+@media screen and (min-width: 1800px) {
   /* line 36, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
   div#layout4 {
     height: 925px;

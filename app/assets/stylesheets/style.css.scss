@@ -7,13 +7,13 @@ nav.navbar.navbar-default {
 border: none;
 }
 
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 .navbar-collapse.collapse {
   display: flex!important;
 }
 }
 
-@media all and ( min-width: 1925px) {
+@media screen and (min-width: 1925px) {
   div#layout4 {
   height: 1000px;
 }
@@ -32,7 +32,7 @@ div#layout1 {
 
 }
 
-@media all and ( min-width: 1800px) {
+@media screen and ( min-width: 1800px) {
   div#layout4 {
   height: 925px;
 }

@@ -34,6 +34,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rails_12factor', group: :production
 gem 'httparty'
 gem 'json'
+gem "paperclip"
 
 
 group :development, :test do

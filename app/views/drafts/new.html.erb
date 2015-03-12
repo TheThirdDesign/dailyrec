@@ -18,7 +18,7 @@
        </br>
        <%= f.label :pictures %>
        </br>
-       <%= f.text_field :pictures %>
+       <%= f.text_field :pictures, as: :array %>
        <%= f.hidden_field :admin_id, :value => session[:admin_id] %>
        </br>
        <%= f.radio_button :category, 'favorites', :checked => true %>
@@ -54,6 +54,10 @@
        <%= f.submit "SAVE" %>
        <% elsif params["type"] == 'publish'%>
        <%= f.submit "PUBLISH" %>
+       <% else %>
+       <%= f.submit "SAVE" %>
+       <%= f.submit "PUBLISH" %>
        <% end %>
+    </div>
     </div>
       <% end %>

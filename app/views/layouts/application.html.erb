@@ -92,6 +92,32 @@
 <script type=text/javascript async defer data-pin-color="white" data-pin-hover=true  src="//assets.pinterest.com/js/pinit.js"></script>
 <script>
 
+if ($(window).width() > 1075 ) {}
+$(window).resize(function() {
+  var width = $(window).width() / 1.9;
+  $("#layout4.post").height(width);
+  });
+
+$(window).resize(function() {
+  var width = $(window).width() / 1.9;
+  $("#layout1.post").height(width);
+  });
+
+$(window).resize(function() {
+  var width = $(window).width() / 2.17;
+  $("#layout2.post").height(width);
+  });
+
+$(window).resize(function() {
+  var width = $(window).width() / 1.9;
+  $("#layout3.post").height(width);
+  });
+
+$(window).resize(function() {
+  var width = $(window).width() / 2.9;
+  $("#top.layout3").height(width);
+  });
+}
 // $(document).ready(function() {
 //     $('.menu').dropit();
 // });
