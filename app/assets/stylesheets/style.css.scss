@@ -128,12 +128,17 @@ div#top.layout3 {
   height: 100px;
   margin: auto;
   width: 80%;
+    display: -webkit-box!important;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box!important;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox!important;      /* TWEENER - IE 10 */
+  display: -webkit-flex!important;     /* NEW - Chrome */
+  display: flex!important;
 }
 
 div#navbar-collapse-1 {
   background-color: white;
   width: 100%;
-  display: flex!important;
+
 }
 
 nav.navbar.navbar-default {
