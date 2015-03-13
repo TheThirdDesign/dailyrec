@@ -1,3 +1,5 @@
+
+
 <div id="postHolder">
     <div id="topImage">
       <img src="<%= @post.pictures[0] %>">
@@ -22,6 +24,23 @@
     <% end %>
     <div id="bottomBuffer">
     </div>
+</div>
+
+<div class="comment mobile">
+  <div id="comment">COMMENTS (<%= @comments.length %>)</div>
+  <div id="comment"><%= image_tag 'arrowDown.png', :id => "arrow" %><%= image_tag 'arrowUp.png', :id => "arrow", :style => "display: none"%></div>
+  <%= form_for [@post,@comment] do |f| %>
+    <%= f.label :name %><%= f.text_field :name %>
+    <%= f.label :message %><%= f.text_field :message %>
+    <%= f.hidden_field :post_id, :value => params[:id] %>
+  <%= f.submit "Send" %>
+<% end %>
+</div>
+
+<div id="comments">
+<% @comments.each do |comment| %>
+  <div class="comments"><%= comment.name %>: <%= comment.message %> <%= link_to image_tag('heart.png'), edit_post_comment_path(params[:id],comment.id) %><%= comment.likes %></div>
+<% end %>
 </div>
 
 <div class="wrap mobile">

@@ -2,11 +2,14 @@ Rails.application.routes.draw do
   root :to => 'home#index'
 
   resources :listings
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   resources :users
   resources :drafts
   resources :session
   resources :faqs
+  resources :comments
   resources :admins do
     resources :drafts
     resources :posts

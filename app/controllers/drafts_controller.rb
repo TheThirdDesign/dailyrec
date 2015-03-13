@@ -2,7 +2,7 @@ class DraftsController < ApplicationController
   def new
     if session[:admin_id]
       @draft = Draft.new
-      binding.pry
+      
       render :layout => 'admins'
     else
       redirect_to '/admin/login'
@@ -58,7 +58,7 @@ class DraftsController < ApplicationController
             render :new
           end
       elsif params[:commit] == "PUBLISH"
-        binding.pry
+
         @post = Post.create(draft_params)
         redirect_to '/admin'
       else

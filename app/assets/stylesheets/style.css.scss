@@ -1989,6 +1989,50 @@ div#answer {
   text-align: center;
 }
 
+div#comment {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.comment {
+  width: 60%;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+}
+
+form#new_comment {
+  margin: auto;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  display: none;
+}
+form#new_comment input[type="submit"] {
+  width: 8%;
+}
+
+form#new_comment input[type="submit"]:hover {
+  background-color: #0DD5FC;
+}
+
+div#comments {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  border-bottom: 1px solid grey;
+  padding-bottom: 42px;
+  display: none;
+}
+
+.comments {
+  padding: 5px;
+}
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
