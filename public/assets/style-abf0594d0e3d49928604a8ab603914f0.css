@@ -201,35 +201,6 @@ nav.navbar.navbar-default {
   }
 }
 @media all and (max-width: 1075px) {
-  /* line 169, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
-  div#navbar-collapse-1 {
-    background-color: white;
-    width: 100%;
-    display: -webkit-box !important;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box !important;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox !important;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex !important;
-    /* NEW - Chrome */
-    display: flex !important;
-  }
-
-  /* line 179, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
-  nav.navbar.navbar-default {
-    border: none;
-    display: -webkit-box !important;
-    /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box !important;
-    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox !important;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex !important;
-    /* NEW - Chrome */
-    display: flex !important;
-  }
-
   /* line 188, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
   div#top.layout3 {
     height: 302px;
@@ -2158,20 +2129,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- 
-
-
-
- */
-
