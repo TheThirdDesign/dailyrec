@@ -1336,7 +1336,7 @@ div#holder2 {
 
 /* line 1436, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 li.link.nonlogo1 a:hover {
-  color: lightblue;
+  color: #0DD5FC;
 }
 
 /* line 1440, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
@@ -1774,7 +1774,7 @@ div#bottomBuffer {
 
 /* line 1809, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .instaTitle3 a:hover {
-  color: lightskyblue;
+  color: #0DD5FC;
 }
 
 /* line 1813, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
@@ -1810,7 +1810,7 @@ div#layoutHolder {
 
 /* line 1840, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 #new_post input[type="submit"]:hover {
-  background-color: lightskyblue;
+  background-color: #0DD5FC;
 }
 
 /* line 1844, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
@@ -1830,7 +1830,7 @@ li#addPost a {
 
 /* line 1857, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 li#addPost:hover {
-  background-color: lightskyblue;
+  background-color: #0DD5FC;
 }
 
 /* line 1861, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
