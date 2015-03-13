@@ -338,18 +338,26 @@ $(document).ready(function(){
   });
   });
 
-
+if($(window).width() >= 768) {
 $(document).ready(function(){
-  $(".search").mouseover(function(){
-   $("form").stop().stop().fadeIn("slow");
+  $(".search").fadeToggle("form")
  });
 });
+}
 
-$(document).ready(function(){
-  $(".search").mouseout(function(){
-   $("form").stop().stop().fadeOut("slow");
- });
-});
+if($(window).width() < 768) {
+  $(document).ready(function(){
+    $(".search").mouseover(function(){
+     $("form").stop().stop().fadeIn("slow");
+   });
+  });
+
+  $(document).ready(function(){
+    $(".search").mouseout(function(){
+     $("form").stop().stop().fadeOut("slow");
+   });
+  });
+}
 
 $(document).ready(function(){
   $("#blog a").mouseover(function(){
