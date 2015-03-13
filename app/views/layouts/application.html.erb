@@ -143,6 +143,9 @@ $(document).ready(function() {
         $("#showTitle").css("width","100%")
         $("#showDateCategory").css("width","80%")
         $("div#topImage").css("margin-top","0px")
+        $('div#bottomBuffer').css("height","50px")
+        $('.comment').css("width","70%")
+        $('input#commentSubmit').css("width","11%")
       })
       $(window).resize(function() {
         var width = $(window).width() / 2.9;
@@ -154,22 +157,22 @@ $(document).ready(function() {
       });
 
       $(window).resize(function() {
-        var width = $(window).width() / 1.5;
+        var width = $(window).width() / 1.6;
         $("#layout3.post").height(width);
         $("#layout3.post").css("margin-bottom","75px")
         });
       $(document).ready(function() {
-        var width = $(window).width() / 1.5;
+        var width = $(window).width() / 1.6;
         $("#layout3.post").height(width);
         $("#layout3.post").css("margin-bottom","75px")
         });
 
       $(window).resize(function() {
-        var width = $(window).width() / 1.43;
+        var width = $(window).width() / 1.29;
         $("#layout2.post").height(width);
         });
       $(document).ready(function() {
-        var width = $(window).width() / 1.43;
+        var width = $(window).width() / 1.29;
         $("#layout2.post").height(width);
         });
 
@@ -299,7 +302,10 @@ $(window).bind('scroll', function() {
 $(window).bind('scroll', function() {
   if($(window).width() <= 1075) {
     if($(window).width() >= 768) {
-    
+      $(document).ready(function(){
+        $('div#postBlurb1').css("font-size","13px")
+        $('div#postBlurb2').css("font-size","13px")
+      })
      if ($(window).scrollTop() > 7) {
          $('ul#menu').css("display", "flex")
          $('ul#menu').css("display", "-webkit-box")
