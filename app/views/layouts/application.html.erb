@@ -229,6 +229,24 @@ if($(window).width() < 768) {
     var width = $(window).width() / .8;
     $("div#topImage").height(width);
     });
+
+  $(document).ready(function(){
+    $('button.navbar-toggle').click(function(){
+      $('.search.mobile').toggle()
+    })
+  })
+
+  $(document).ready(function(){
+    $('li#blog').click(function(){
+      $('ul.blogUL').toggle()
+    })
+  })
+
+  $(document).ready(function(){
+    $('li#about').click(function(){
+      $('ul.aboutUL').toggle()
+    })
+  })
 }
 
 
@@ -386,7 +404,6 @@ if($(window).width() >= 768) {
      $("form").stop().stop().fadeOut("slow");
    });
   });
-}
 
 $(document).ready(function(){
   $("#blog a").mouseover(function(){
@@ -411,7 +428,7 @@ $(document).ready(function(){
     $(".aboutUL").fadeOut("slow");
    });
    });
-
+}
 
 </script>
 
