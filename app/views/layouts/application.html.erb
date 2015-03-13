@@ -338,14 +338,16 @@ $(document).ready(function(){
   });
   });
 
-if($(window).width() >= 768) {
+if($(window).width() < 768) {
+
 $(document).ready(function(){
-  $(".search").fadeToggle("form")
+  $(".search").click(function(){
+   $("form").fadeToggle("slow");
  });
 });
 }
 
-if($(window).width() < 768) {
+if($(window).width() >= 768) {
   $(document).ready(function(){
     $(".search").mouseover(function(){
      $("form").stop().stop().fadeIn("slow");
