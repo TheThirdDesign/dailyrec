@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root :to => 'home#index'
 
+  resources :matchusers
   resources :listings
   resources :posts do
     resources :comments
@@ -27,6 +28,7 @@ Rails.application.routes.draw do
   get '/admin/login' => 'session#new'
   post '/session' => 'session#create'
   delete '/session' => 'session#destroy'
+  # get '/matchusers/new' => 'matchusers#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

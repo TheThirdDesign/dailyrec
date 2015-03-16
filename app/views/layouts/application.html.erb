@@ -11,6 +11,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <form id="searchBar" action="/search" method="get" accept-charset="UTF-8" >
+    <input type="text" type="hidden" placeholder="WHAT ARE YOU LOOKING FOR?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'WHAT ARE YOU LOOKING FOR?'" name="search" use="search"></input>
+  </form>
+  <div id="closeSearch">
+    <%= image_tag 'close.png'%>
+  </div>
+  <div id="closeContact">
+    <%= image_tag 'close.png'%>
+  </div>
+
+  <div id="formPopUp">
+  <div id="body">
+  <div class="container3 quarter mobile">
+    <div id="form">
+      <% @user = User.new %>
+      <%= form_for @user do |f| %>
+           <%= f.label :name %>
+           </br>
+           <%= f.text_field :name %>
+         </br>
+           <%= f.label :email %>
+           </br>
+           <%= f.email_field :email %>
+           </br>
+           <%= f.label :message, id: "messageLabel1" %>
+           </br>
+           <%= f.text_area :message, id: "messageArea" %>
+            </br>
+            <%= f.submit "Send" %>
+          <% end %>
+    </div>
+  </div>
+  </div>
+  </div>
+
 <div id="window">
 
       <nav class="navbar navbar-default" role="navigation">
@@ -69,18 +104,18 @@
         <a href="#"><%= image_tag 'favorite.png', :id => "facebook" %></a>
       </div>
       <div class="sub">
-        <%= link_to "SUBSCRIBE", new_user_path %>
+        <a href="#">SUBSCRIBE</a>
       </div>
       <div class="search mobile">
         <div id="search"><%= image_tag 'search2.png' %></div>
-        <form id="searchBar" action="/search" method="get" accept-charset="UTF-8" >
-          <input type="text" type="hidden" name="search" use="search"></input>
-        </form>
       </div>
+
+<div id="yield">
+
 
         <%= yield %>
 
-
+</div>
 
 
 
@@ -297,7 +332,7 @@ $(window).bind('scroll', function() {
          $('.navbar.navbar-default').css("width","98%")
          $('#navbar-collapse-1').css("padding-bottom","10px")
          $('.search').css("top","39px")
-        //  $('ul#menu').css("height","100px")
+         $('ul#menu').css("height","100px")
         //  $('ul#menu').css("background-color","white")
         //  $('ul#menu').css("z-index","1")
      }
@@ -367,46 +402,124 @@ $(document).ready(function(){
   });
 
 if($(window).width() < 768) {
+  $(document).ready(function(){
+    $('#searchBar').css("display","none");
+    $('#closeSearch').css("display","none")
+    $('#closeContact').css("display","none")
+    $('#formPopUp').css("display","none")
+    $("#search").click(function(){
+     $("#searchBar").fadeToggle("slow");
+     $('#closeSearch').fadeToggle("slow")
+    //  $('#window').css("background-color","grey");
+     $("#window").css("opacity",".1")
+     $("#searchBar").css("border","2px solid rgba(4,30,66,1)")
+     $("#searchBar").css("z-index","10")
+     $('.search img').css("z-index","9")
+     $('#searchBar').css("width","70%")
+     $('#searchBar').css("right","15%")
+     $('#searchBar input').css("width","100%")
+     $('#searchBar input').css("height","30px")
+   });
+    $(".sub").click(function(){
+      $("#formPopUp").fadeToggle("slow");
+      $('#closeContact').fadeToggle("slow")
+     //  $('#window').css("background-color","grey");
+      $("#window").css("opacity",".1")
+      $("#formPopUp").css("z-index","10")
+      $("#formPopUp").css("width","90%")
+      $("#formPopUp").css("left","5%")
+    });
+    });
 
-$(document).ready(function(){
-  $('.search.mobile').css("width","25%")
-  $("#search").click(function(){
-   $("#searchBar").fadeToggle("slow");
- });
-});
+    $(document).ready(function(){
+      $("#closeSearch").click(function(){
+        $("#searchBar").toggle();
+        $('#closeSearch').toggle()
+        $("#window").css("opacity","1")
+      })
+    })
+    $(document).ready(function(){
+      $("#closeContact").click(function(){
+        $("#formPopUp").toggle();
+        $('#closeContact').toggle()
+        $("#window").css("opacity","1")
+      })
+    })
 
-$(document).resize(function(){
-  $('.search.mobile').css("width","25%")
-  $("#search").click(function(){
-   $("#searchBar").fadeToggle("slow");
- });
-});
+// $(document).ready(function(){
+//   $('.search.mobile').css("width","25%")
+//   $("#search").click(function(){
+//    $("#searchBar").fadeToggle("slow");
+//
+//  });
+// });
+//
+// $(document).resize(function(){
+//   $('.search.mobile').css("width","25%")
+//   $("#search").click(function(){
+//    $("#searchBar").fadeToggle("slow");
+//  });
+// });
 }
 
 if($(window).width() >= 768) {
   $(document).ready(function(){
-    $("#search").mouseover(function(){
-     $("#searchBar").stop().stop().fadeIn("slow");
+    $('#searchBar').css("display","none");
+    $('#closeSearch').css("display","none")
+    $('#closeContact').css("display","none")
+    $('#formPopUp').css("display","none")
+    $("#search").click(function(){
+     $("#searchBar").fadeToggle("slow");
+     $('#closeSearch').fadeToggle("slow")
+    //  $('#window').css("background-color","grey");
+     $("#window").css("opacity",".1")
+     $("#searchBar").css("border","2px solid rgba(4,30,66,1)")
+     $("#searchBar").css("z-index","10")
+     $('.search img').css("z-index","9")
+     $('#searchBar input').css("width","100%")
+     $('#searchBar input').css("height","30px")
    });
+    $(".sub").click(function(){
+      $("#formPopUp").fadeToggle("slow");
+      $('#closeContact').fadeToggle("slow")
+     //  $('#window').css("background-color","grey");
+      $("#window").css("opacity",".1")
+      $("#formPopUp").css("z-index","10")
+    });
   });
 
   $(document).ready(function(){
-    $("#search").mouseout(function(){
-     $("#searchBar").stop().stop().fadeOut("slow");
-   });
-  });
+    $("#closeSearch").click(function(){
+      $("#searchBar").toggle();
+      $('#closeSearch').toggle()
+      $("#window").css("opacity","1")
+    })
+  })
+  $(document).ready(function(){
+    $("#closeContact").click(function(){
+      $("#formPopUp").toggle();
+      $('#closeContact').toggle()
+      $("#window").css("opacity","1")
+    })
+  })
 
-  $(document).resize(function(){
-    $(".search").mouseover(function(){
-     $("form").stop().stop().fadeIn("slow");
-   });
-  });
+  // $(document).ready(function(){
+  //   $("#search").mouseout(function(){
+  //    $("#searchBar").stop().stop().fadeOut("slow");
+  //  });
+  // });
 
-  $(document).resize(function(){
-    $(".search").mouseout(function(){
-     $("form").stop().stop().fadeOut("slow");
-   });
-  });
+  // $(document).resize(function(){
+  //   $("#search").click(function(){
+  //    $("#searchBar").fadeToggle("slow");
+  //  });
+  // });
+
+  // $(document).resize(function(){
+  //   $(".search").click(function(){
+  //    $("#searchBar").stop().stop().fadeOut("slow");
+  //  });
+  // });
 
 $(document).ready(function(){
   $("#blog a").mouseover(function(){

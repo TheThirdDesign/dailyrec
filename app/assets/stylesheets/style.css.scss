@@ -1962,6 +1962,13 @@ div#newer a:hover {
   display: none;
 }
 
+form#searchBar {
+  position: fixed;
+  top: 250px;
+  right: 35%;
+  width: 30%;
+}
+
 div#search {
   padding-right: 23px;
 }
@@ -1969,6 +1976,11 @@ div#search {
 div#heading {
   font-size: 40px;
   margin-bottom: 20px;
+}
+
+.search form input[type="text"] {
+  width: 100%;
+  height: 30px;
 }
 
 div#formButtonHolder input[type="submit"] {
@@ -2066,6 +2078,101 @@ div#comments {
   padding: 5px;
 }
 
+::-webkit-input-placeholder {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  padding-left: 21px;
+}
+
+:-moz-placeholder {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  padding-left: 21px;
+}
+
+::-moz-placeholder {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  padding-left: 21px;
+}
+
+:-ms-input-placeholder {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  padding-left: 21px;
+}
+
+div#closeSearch {
+  position: fixed;
+  z-index: 9;
+  left: 28px;
+  top: 28px;
+}
+
+div#closeContact {
+  position: fixed;
+  z-index: 9;
+  left: 28px;
+  top: 28px;
+}
+
+div#formPopUp {
+  position: fixed;
+  top: 200px;
+  width: 50%;
+  left: 24.5%;
+  margin-bottom: 400px;
+}
+
+div#formMatch form input {
+  color: black;
+  width: 50%;
+  margin: 20px;
+}
+
+div#formMatch {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin: 7px;
+  border: 2px solid white;
+  padding: 20px;
+  color: white;
+  width: 98.6%;
+}
+
+.container4 {
+  width: 60%;
+  margin: auto;
+  background-color: #041e42;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+div#matchuser {
+  width: 90%;
+  margin: auto;
+}
+
+div#formMatch form input[type="submit"] {
+  width: 25%;
+}
+
+div#titleMatch {
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  font-size: 60px;
+  color: rgba(4, 30, 66, 0.8);
+  font-family: 'Quicksand', sans-serif;
+}
+
+div#matchContainer {
+  width: 100%;
+}
+
+div#formMatch form input {
+  text-align: center;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
