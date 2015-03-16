@@ -210,6 +210,7 @@ div#layout1 {
 
   div.socialMobile {
     display: none;
+
   }
 
   #logo img {
@@ -342,6 +343,7 @@ display: flex;
   div.socialMobile {
     text-align: center;
     margin-top: 20px;
+    z-index: 5;
   }
 
   #logo img {
@@ -1169,7 +1171,7 @@ text-align: center;
 
 .navbar-default .navbar-nav>li>a {
 color: rgba(4,30,66,1);
-font-size: 12px;
+font-size: 14px;
 padding-bottom: 0px;
 }
 
@@ -1288,10 +1290,12 @@ position: fixed;
 right: 28px;
 top: 200px;
 width: 21px;
+z-index: 5;
 }
 
 .social1 a img {
 padding-top: 20px;
+z-index: 5;
 }
 
 .wrap {
@@ -1386,7 +1390,7 @@ li.drop {
 .aboutUL li a {
   font-family: 'Lato', sans-serif;
   color: rgba(4,30,66,1);
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 0px;
   text-decoration: none;
   padding: 10px;
@@ -1395,7 +1399,7 @@ li.drop {
 .blogUL li a {
   font-family: 'Lato', sans-serif;
   color: rgba(4,30,66,1);
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 0px;
   text-decoration: none;
 }
@@ -1464,7 +1468,7 @@ margin-top: 50px;
 }
 
 li.link.nonlogo1 a:hover {
-color: #0DD5FC;
+color: #c1c6c8;
 }
 
 div#titleContact {
@@ -1637,11 +1641,11 @@ div#postButton2 a {
 }
 
 div#postButton1.blogButton:hover {
-  background-color: #0DD5FC;
+  background-color: #c1c6c8;
 }
 
 div#postButton4.blogButton:hover {
-  background-color: #0DD5FC;
+  background-color: #c1c6c8;
 }
 
 /* layout3 */
@@ -1837,7 +1841,7 @@ div#bottomBuffer {
 }
 
 .instaTitle3 a:hover {
-  color: #0DD5FC;
+  color: #c1c6c8;
 }
 
 .radioHolder img {
@@ -1868,7 +1872,7 @@ div#layoutHolder {
 }
 
 #new_post input[type="submit"]:hover {
-  background-color: #0DD5FC;
+  background-color: #c1c6c8;
 }
 
 li#addPost {
@@ -1885,7 +1889,7 @@ li#addPost a {
 }
 
 li#addPost:hover {
-  background-color: #0DD5FC;
+  background-color: #c1c6c8;
 }
 
 div#older {
@@ -1935,11 +1939,11 @@ div#moreLess {
 }
 
 div#older a:hover {
-  background-color: #0DD5FC;
+  background-color: #c1c6c8;
 }
 
 div#newer a:hover {
-  background-color: #0DD5FC;
+  background-color: #c1c6c8;
 }
 
 .search {
@@ -2044,7 +2048,7 @@ form#new_comment input[type="submit"] {
 }
 
 form#new_comment input[type="submit"]:hover {
-  background-color: #0DD5FC;
+  background-color: #c1c6c8;
 }
 
 div#comments {

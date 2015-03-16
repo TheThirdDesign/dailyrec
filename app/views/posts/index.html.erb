@@ -38,7 +38,7 @@
           </div>
         </div>
         <div id="right" class="layout1">
-          <div id="postTitle1" class="layout1 info"><%= post.title %></div>
+          <div id="postTitle1" class="layout1 info"><%= post.title.upcase %></div>
           <div id="postDate1" class="layout1 info"><%= post.date%></div>
           <div id="postBlurb1" class="layout1 info"><%= post.teaser %></div>
           <div id="postButton1" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
@@ -54,7 +54,7 @@
           <div id="postBlurb2" class="layout2 info"><%= post.teaser %></div>
         </div>
         <div id="bottomRight" class="layout2">
-          <div id="postTitle2" class="layout2 info"><%= post.title %></div>
+          <div id="postTitle2" class="layout2 info"><%= post.title.upcase %></div>
           <div id="postDate2" class="layout2 info"><%= post.date%></div>
           <div id="postButton1" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
         </div>
@@ -72,7 +72,7 @@
         <div id="postBlurb2" class="layout2 info"><%= post.teaser %></div>
       </div>
       <div id="bottomRight" class="layout2">
-        <div id="postTitle2" class="layout2 info"><%= post.title %></div>
+        <div id="postTitle2" class="layout2 info"><%= post.title.upcase %></div>
         <div id="postDate2" class="layout2 info"><%= post.date%></div>
         <div id="postButton1" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
       </div>
@@ -81,7 +81,7 @@
   <% elsif post.layout == "pictureRight" %>
     <div id="layout4" class="post">
         <div id="left" class="layout4">
-          <div id="postTitle1" class="layout4 info"><%= post.title %></div>
+          <div id="postTitle1" class="layout4 info"><%= post.title.upcase %></div>
           <div id="postDate1" class="layout4 info"><%= post.date%></div>
           <div id="postBlurb1" class="layout4 info"><%= post.teaser %></div>
           <div id="postButton4" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
@@ -95,7 +95,8 @@
   <% end %>
 <% end %>
 <% @newCounterMore = @counter + 1 %>
-<% @newCounterless = @counter - @count %>
+<% @newCounterLess = @start - 5 %>
+<% binding.pry %>
 <div id="moreLess">
 <% if @newCounterMore < @posts.length %>
   <div id="older" class=".blogButton">

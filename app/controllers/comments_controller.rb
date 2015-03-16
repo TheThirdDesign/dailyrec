@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
 
 def create
   @comment = Comment.create(comment_params)
-  @comments = Comment.where(post_id: params[:id])
+  @comments = Comment.where(post_id: params[:id]).order("created_at DESC")
   redirect_to post_path(params[:post_id])
 end
 
