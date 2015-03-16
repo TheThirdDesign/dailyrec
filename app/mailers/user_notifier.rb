@@ -10,7 +10,8 @@ class UserNotifier < ActionMailer::Base
 
   def send_match_email(matchuser)
     @matchuser = matchuser
-    mail(:to => @matchuser.email,
+    mail(:from => "wahlbrooke@gmail.com",
+    :to => @matchuser.email,
     :subject => 'Thanks for Signing in!' )
   end
 end
