@@ -2197,11 +2197,31 @@ div#formMatch form input {
   text-align: center;
 }
 
+/* line 2177, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+#SigninButton a {
+  padding-top: 30px;
+  background-color: #041e42;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  font-family: 'Lato' sans-serif;
+}
+
+/* line 2187, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#SigninButton {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 2182, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2199, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2224,36 +2244,53 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 2203, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2220, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 2207, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2224, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 body {
   line-height: 1;
 }
 
-/* line 2210, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2227, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 2213, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2230, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 2216, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2233, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 2221, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2238, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ 
+
+
+
+ */
+

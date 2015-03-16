@@ -2174,6 +2174,23 @@ div#formMatch form input {
   text-align: center;
 }
 
+#SigninButton a {
+  padding-top: 30px;
+  background-color: rgba(4, 30, 66, 1);
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  font-family: 'Lato' sans-serif;
+}
+
+div#SigninButton {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
