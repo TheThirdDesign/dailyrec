@@ -73,7 +73,7 @@
       </div>
       <div class="search mobile">
         <div id="search"><%= image_tag 'search2.png' %></div>
-        <form action="/search" method="get" accept-charset="UTF-8" >
+        <form id="searchBar" action="/search" method="get" accept-charset="UTF-8" >
           <input type="text" type="hidden" name="search" use="search"></input>
         </form>
       </div>
@@ -371,14 +371,14 @@ if($(window).width() < 768) {
 $(document).ready(function(){
   $('.search.mobile').css("width","25%")
   $("#search").click(function(){
-   $("form").fadeToggle("slow");
+   $("#searchBar").fadeToggle("slow");
  });
 });
 
 $(document).resize(function(){
   $('.search.mobile').css("width","25%")
   $("#search").click(function(){
-   $("form").fadeToggle("slow");
+   $("#searchBar").fadeToggle("slow");
  });
 });
 }
@@ -386,13 +386,13 @@ $(document).resize(function(){
 if($(window).width() >= 768) {
   $(document).ready(function(){
     $("#search").mouseover(function(){
-     $("form").stop().stop().fadeIn("slow");
+     $("#searchBar").stop().stop().fadeIn("slow");
    });
   });
 
   $(document).ready(function(){
     $("#search").mouseout(function(){
-     $("form").stop().stop().fadeOut("slow");
+     $("#searchBar").stop().stop().fadeOut("slow");
    });
   });
 
