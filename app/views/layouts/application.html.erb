@@ -370,14 +370,14 @@ if($(window).width() < 768) {
 
 $(document).ready(function(){
   $('.search.mobile').css("width","25%")
-  $(".search").click(function(){
+  $("#search").click(function(){
    $("form").fadeToggle("slow");
  });
 });
 
 $(document).resize(function(){
   $('.search.mobile').css("width","25%")
-  $(".search").click(function(){
+  $("#search").click(function(){
    $("form").fadeToggle("slow");
  });
 });
@@ -385,13 +385,13 @@ $(document).resize(function(){
 
 if($(window).width() >= 768) {
   $(document).ready(function(){
-    $(".search").mouseover(function(){
+    $("#search").mouseover(function(){
      $("form").stop().stop().fadeIn("slow");
    });
   });
 
   $(document).ready(function(){
-    $(".search").mouseout(function(){
+    $("#search").mouseout(function(){
      $("form").stop().stop().fadeOut("slow");
    });
   });
