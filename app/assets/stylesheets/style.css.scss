@@ -2182,6 +2182,7 @@ div#formMatch form input {
   padding-right: 100px;
   color: white;
   font-family: 'Lato' sans-serif;
+  text-decoration: none;
 }
 
 div#SigninButton {
@@ -2190,6 +2191,10 @@ div#SigninButton {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+#SigninButton a:hover {
+  background-color: #c1c6c8;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
