@@ -1,7 +1,16 @@
 class MatchusersController < ApplicationController
 
   def index
-    render :layout => 'match'
+    binding.pry
+    if params["format"] == "csv"
+      @matchusers = Matchuser.order(:name)
+      respond_to do |format|
+        format.html
+        format.csv { send_data @matchusers.to_csv }
+      end
+    else
+      render :layout => 'match'
+    end
   end
 
 
