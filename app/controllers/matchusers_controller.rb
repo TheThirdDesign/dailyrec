@@ -1,7 +1,7 @@
 class MatchusersController < ApplicationController
 
   def index
-    binding.pry
+    
     if params["format"] == "csv"
       @matchusers = Matchuser.order(:name)
       respond_to do |format|
