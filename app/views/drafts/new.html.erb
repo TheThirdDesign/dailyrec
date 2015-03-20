@@ -1,20 +1,116 @@
+<script>
+
+  $(document).ready(function() {
+    $('#urlField').css("display","none");
+    $('#teaserButton').click(function(){
+      var selStart = $("#teaser")[0].selectionStart;
+      var selEnd = $("#teaser")[0].selectionEnd;
+
+      console.log(selStart)
+      console.log(selEnd)
+
+      var originalString = $("#teaser").val();
+      var charNumber = parseInt(selEnd) - parseInt(selStart)
+      console.log(charNumber)
+        var segment_1 = originalString.substr(0,selStart);
+        var segment_2 = originalString.substr(selStart,charNumber);
+        var segment_3 = originalString.substr(selEnd,originalString.length);
+        console.log(segment_1)
+        console.log(segment_2)
+        console.log(segment_3)
+
+      $('#urlField').fadeIn("slow")
+      $('form').css("opacity",".3")
+
+
+      $('#urlButton').click(function(){
+        var url = $('#url').val();
+        var finalString = segment_1 + "<a href='"+ url +"'>" + segment_2 + "</a>" + segment_3
+        $("#teaser").val(finalString);
+
+        $('#urlField').fadeOut("slow")
+        $('form').css("opacity","1")
+      })
+
+      $('#cancelButton').click(function(){
+        $('#urlField').fadeOut("slow")
+        $('form').css("opacity","1")
+      })
+
+
+      $('#url').val("");
+    })
+
+    $('#contentButton').click(function(){
+      var selStart = $("#content")[0].selectionStart;
+      var selEnd = $("#content")[0].selectionEnd;
+
+      console.log(selStart)
+      console.log(selEnd)
+
+      var originalString = $("#content").val();
+      var charNumber = parseInt(selEnd) - parseInt(selStart)
+      console.log(charNumber)
+        var segment_1 = originalString.substr(0,selStart);
+        var segment_2 = originalString.substr(selStart,charNumber);
+        var segment_3 = originalString.substr(selEnd,originalString.length);
+        console.log(segment_1)
+        console.log(segment_2)
+        console.log(segment_3)
+
+      $('#urlField').fadeIn("slow")
+      $('form').css("opacity",".3")
+
+
+      $('#urlButton').click(function(){
+        var url = $('#url').val();
+        var finalString = segment_1 + "<a href='"+ url +"'>" + segment_2 + "</a>" + segment_3
+        $("#content").val(finalString);
+
+        $('#urlField').fadeOut("slow")
+        $('form').css("opacity","1")
+      })
+
+      $('#cancelButton').click(function(){
+        $('#urlField').fadeOut("slow")
+        $('form').css("opacity","1")
+      })
+
+
+      $('#url').val("");
+    })
+  })
+</script>
+
+<!-- <div id="urlField" class="form">
+	Link Address: </br><input id="url"></input>
+	<button class="btn" id="urlButton">+</button>
+</div> -->
+
 <div id="form1">
   <%= form_for @draft do |f| %>
        <%= f.label :title %>
        </br>
        <%= f.text_field :title %>
        </br>
+       </br>
        <%= f.label :date %>
        </br>
        <%= f.text_field :date %>
        </br>
+       </br>
        <%= f.label :teaser %>
        </br>
-       <%= f.text_area :teaser %>
+       <%= f.text_area :teaser, id: "teaser" %>
+       </br>
+       <a id="teaserButton" class="btn" href="#">TEASER HYPERLINK</a> (highlight word to hyperlink then click the button)
        </br>
        <%= f.label :content %>
        </br>
-       <%= f.text_area :content %>
+       <%= f.text_area :content, id: "content" %>
+       </br>
+       <a id="contentButton" class="btn" href="#">CONTENT HYPERLINK</a> (highlight word to hyperlink then click the button)
+       </br>
        </br>
        <%= f.label :pictures %>
        </br>
