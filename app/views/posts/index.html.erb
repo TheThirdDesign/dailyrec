@@ -40,7 +40,7 @@
         <div id="right" class="layout1">
           <div id="postTitle1" class="layout1 info"><%= post.title.upcase %></div>
           <div id="postDate1" class="layout1 info"><%= post.date%></div>
-          <div id="postBlurb1" class="layout1 info"><%= post.teaser %></div>
+          <div id="postBlurb1" class="layout1 info"><%=raw post.teaser.html_safe %></div>
           <div id="postButton1" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
         </div>
     </div>
@@ -51,7 +51,7 @@
       </div>
       <div id="bottom" class="layout2">
         <div id="bottomLeft" class="layout2">
-          <div id="postBlurb2" class="layout2 info"><%= post.teaser %></div>
+          <div id="postBlurb2" class="layout2 info"><%=raw post.teaser.html_safe %></div>
         </div>
         <div id="bottomRight" class="layout2">
           <div id="postTitle2" class="layout2 info"><%= post.title.upcase %></div>
@@ -69,7 +69,7 @@
     </div>
     <div id="bottom" class="layout2">
       <div id="bottomLeft" class="layout2">
-        <div id="postBlurb2" class="layout2 info"><%= post.teaser %></div>
+        <div id="postBlurb2" class="layout2 info"><%=raw post.teaser.html_safe %></div>
       </div>
       <div id="bottomRight" class="layout2">
         <div id="postTitle2" class="layout2 info"><%= post.title.upcase %></div>
@@ -83,7 +83,7 @@
         <div id="left" class="layout4">
           <div id="postTitle1" class="layout4 info"><%= post.title.upcase %></div>
           <div id="postDate1" class="layout4 info"><%= post.date%></div>
-          <div id="postBlurb1" class="layout4 info"><%= post.teaser %></div>
+          <div id="postBlurb1" class="layout4 info"><%=raw post.teaser.html_safe %></div>
           <div id="postButton4" class="blogButton"><%= link_to "Show More", post_path(post.id) %></div>
         </div>
         <div id="right" class="layout4">

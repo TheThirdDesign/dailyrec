@@ -1669,28 +1669,28 @@ div#layout4 {
 }
 
 /* line 1736, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
-textarea#post_content {
+textarea#content {
   margin: 0px;
   width: 696px;
   height: 419px;
 }
 
 /* line 1742, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
-textarea#draft_content {
+textarea#content {
   margin: 0px;
   width: 696px;
   height: 419px;
 }
 
 /* line 1748, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
-textarea#post_teaser {
+textarea#teaser {
   margin: 0px;
   width: 697px;
   height: 92px;
 }
 
 /* line 1754, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
-textarea#draft_teaser {
+textarea#teaser {
   margin: 0px;
   width: 697px;
   height: 92px;
@@ -2013,7 +2013,7 @@ textarea#faq_answer {
 div#faqSection {
   width: 60%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 100px;
 }
 
@@ -2246,11 +2246,24 @@ div#SigninButton {
   font-size: 20px;
 }
 
+/* line 2223, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+div#urlField {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: grey;
+  width: 50%;
+  text-align: center;
+  top: 200px;
+  left: 25%;
+  padding: 5px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 2227, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2239, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2273,36 +2286,53 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 2248, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2260, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 2252, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2264, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 body {
   line-height: 1;
 }
 
-/* line 2255, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2267, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 2258, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2270, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 2261, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2273, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 2266, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2278, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ 
+
+
+
+ */
+

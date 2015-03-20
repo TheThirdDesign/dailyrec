@@ -7,10 +7,17 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag "style" %>
 </head>
 <body>
+  <div id="urlField" class="form">
+  	Link Address: </br><input id="url"></input>
+  	<button class="btn" id="urlButton">add</button>
+    <button class="btn" id="cancelButton">cancel</button>
+  </div>
+
   <div class="container">
     <div class="row">
       <ul class="col-md-12">

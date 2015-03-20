@@ -12,7 +12,7 @@
       <div id="showDateCategory"><%= @post.date %> // <%= @admin.name %></div>
     </div>
     <div id="contentArea">
-      <div id="showContent"><%= @post.content %></div>
+      <div id="showContent"><%= @post.content.html_safe %></div>
     </div>
     <% @post.pictures.each do |picture| %>
       <% if @post.pictures.index(picture) == 0 %>

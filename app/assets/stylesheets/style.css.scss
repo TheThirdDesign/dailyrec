@@ -441,7 +441,7 @@ display: flex;
   }
 
   .insta2.mobile {
-    
+
   margin-left: 0px;
   }
 
@@ -1733,25 +1733,25 @@ div#layout4 {
   margin-bottom: 75px;
 }
 
-textarea#post_content {
+textarea#content {
   margin: 0px;
   width: 696px;
   height: 419px;
 }
 
-textarea#draft_content {
+textarea#content {
   margin: 0px;
   width: 696px;
   height: 419px;
 }
 
-textarea#post_teaser {
+textarea#teaser {
   margin: 0px;
   width: 697px;
   height: 92px;
 }
 
-textarea#draft_teaser {
+textarea#teaser {
   margin: 0px;
   width: 697px;
   height: 92px;
@@ -2019,7 +2019,7 @@ textarea#faq_answer {
 div#faqSection {
   width: 60%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 100px;
 }
 
@@ -2218,6 +2218,18 @@ div#SigninButton {
   line-height: 30px;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+}
+
+div#urlField {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: grey;
+  width: 50%;
+  text-align: center;
+  top: 200px;
+  left: 25%;
+  padding: 5px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
