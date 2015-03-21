@@ -1,6 +1,20 @@
 class PostsController < ApplicationController
 def index
-    if params["type"] == "favorites"
+    if params["type"] == "all"
+        @posts = Post.all.order("created_at DESC")
+        @count = params["count"].to_i
+        response = HTTParty.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=1678934706.7497432.f3048715df0940b69ed625db492c45f5')
+        @response = response["data"]
+        @images = []
+        @counter = 1
+        @response.each do |image|
+          if @counter <= 5
+          imageURL = image["images"]["standard_resolution"]["url"]
+          @images.push(imageURL)
+        end
+        @counter += 1
+      end
+    elsif params["type"] == "favorites"
       @posts = Post.where(category: "favorites").order("created_at DESC")
       @count = params["count"].to_i
       response = HTTParty.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=1678934706.7497432.f3048715df0940b69ed625db492c45f5')

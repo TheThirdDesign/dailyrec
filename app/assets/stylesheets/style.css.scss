@@ -943,11 +943,12 @@ margin-left: 9%;
 
 .aboutInfo p {
   width: 86%;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Lato', sans-serif;
   word-spacing: 3px;
   line-height: 30px;
   text-align: center;
+  padding-top: 100px;
 }
 
 div#header {
@@ -1797,6 +1798,7 @@ display: -ms-flexbox;      /* TWEENER - IE 10 */
 display: -webkit-flex;     /* NEW - Chrome */
 display: flex;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 div#showTitle {
@@ -2217,7 +2219,7 @@ div#SigninButton {
   text-align: center;
   line-height: 30px;
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 div#urlField {
@@ -2230,6 +2232,22 @@ div#urlField {
   top: 200px;
   left: 25%;
   padding: 5px;
+}
+
+.info {
+  font-weight: 300;
+}
+
+b.bold {
+  font-weight: bold;
+}
+
+i.italic {
+  font-style: italic;
+}
+
+div#buffer {
+  margin: 150px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126

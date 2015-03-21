@@ -4,7 +4,7 @@
   <title>Dailyrec</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
@@ -81,6 +81,7 @@
             <li id="blog" class="link nonlogo1 quarter mobile">
               <a href="#">LIFESTYLE</a>
               <ul class="blogUL">
+                <li class="drop"><%= link_to "All POSTS", { controller: "posts", action: "index", type: "all", count: 0 } %></li>
                 <li class="drop"><%= link_to "CURRENT FAVORITES", { controller: "posts", action: "index", type: "favorites", count: 0 } %></li>
                 <li class="drop"><%= link_to "STORIES", { controller: "posts", action: "index", type: "stories", count: "0" } %></li>
                 <li class="drop"><%= link_to "AT HOME", { controller: "posts", action: "index", type: "home", count: "0" } %></li>

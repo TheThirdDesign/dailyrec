@@ -11,6 +11,7 @@
 
       var originalString = $("#teaser").val();
       var charNumber = parseInt(selEnd) - parseInt(selStart)
+      if (charNumber > 0) {
       console.log(charNumber)
         var segment_1 = originalString.substr(0,selStart);
         var segment_2 = originalString.substr(selStart,charNumber);
@@ -39,7 +40,54 @@
 
 
       $('#url').val("");
+    }
     })
+
+      $('#boldTeaserButton').click(function(){
+        var selStart = $("#teaser")[0].selectionStart;
+        var selEnd = $("#teaser")[0].selectionEnd;
+
+        console.log(selStart)
+        console.log(selEnd)
+
+        var originalString = $("#teaser").val();
+        var charNumber = parseInt(selEnd) - parseInt(selStart)
+        if (charNumber > 0) {
+        console.log(charNumber)
+          var segment_1 = originalString.substr(0,selStart);
+          var segment_2 = originalString.substr(selStart,charNumber);
+          var segment_3 = originalString.substr(selEnd,originalString.length);
+          console.log(segment_1)
+          console.log(segment_2)
+          console.log(segment_3)
+          var url = $('#url').val();
+          var finalString = segment_1 + "<b class='bold'>" + segment_2 + "</b>" + segment_3
+          $("#teaser").val(finalString);
+        }
+      })
+
+      $('#italicTeaserButton').click(function(){
+        var selStart = $("#teaser")[0].selectionStart;
+        var selEnd = $("#teaser")[0].selectionEnd;
+
+        console.log(selStart)
+        console.log(selEnd)
+
+        var originalString = $("#teaser").val();
+        var charNumber = parseInt(selEnd) - parseInt(selStart)
+        if (charNumber > 0) {
+        console.log(charNumber)
+          var segment_1 = originalString.substr(0,selStart);
+          var segment_2 = originalString.substr(selStart,charNumber);
+          var segment_3 = originalString.substr(selEnd,originalString.length);
+          console.log(segment_1)
+          console.log(segment_2)
+          console.log(segment_3)
+          var url = $('#url').val();
+          var finalString = segment_1 + "<i class='italic'>" + segment_2 + "</i>" + segment_3
+          $("#teaser").val(finalString);
+        }
+      })
 
     $('#contentButton').click(function(){
       var selStart = $("#content")[0].selectionStart;
@@ -50,6 +98,8 @@
 
       var originalString = $("#content").val();
       var charNumber = parseInt(selEnd) - parseInt(selStart)
+
+      if (charNumber > 0) {
       console.log(charNumber)
         var segment_1 = originalString.substr(0,selStart);
         var segment_2 = originalString.substr(selStart,charNumber);
@@ -78,6 +128,73 @@
 
 
       $('#url').val("");
+    }
+    })
+
+    $('#boldContentButton').click(function(){
+      var selStart = $("#content")[0].selectionStart;
+      var selEnd = $("#content")[0].selectionEnd;
+
+      console.log(selStart)
+      console.log(selEnd)
+
+      var originalString = $("#content").val();
+      var charNumber = parseInt(selEnd) - parseInt(selStart)
+      if (charNumber > 0) {
+      console.log(charNumber)
+        var segment_1 = originalString.substr(0,selStart);
+        var segment_2 = originalString.substr(selStart,charNumber);
+        var segment_3 = originalString.substr(selEnd,originalString.length);
+        console.log(segment_1)
+        console.log(segment_2)
+        console.log(segment_3)
+        var finalString = segment_1 + "<b class='bold'>" + segment_2 + "</b>" + segment_3
+        $("#content").val(finalString);
+      }
+    })
+
+    $('#italicContentButton').click(function(){
+      var selStart = $("#content")[0].selectionStart;
+      var selEnd = $("#content")[0].selectionEnd;
+
+      console.log(selStart)
+      console.log(selEnd)
+
+      var originalString = $("#content").val();
+      var charNumber = parseInt(selEnd) - parseInt(selStart)
+      if (charNumber > 0) {
+      console.log(charNumber)
+        var segment_1 = originalString.substr(0,selStart);
+        var segment_2 = originalString.substr(selStart,charNumber);
+        var segment_3 = originalString.substr(selEnd,originalString.length);
+        console.log(segment_1)
+        console.log(segment_2)
+        console.log(segment_3)
+        var finalString = segment_1 + "<i class='italic'>" + segment_2 + "</i>" + segment_3
+        $("#content").val(finalString);
+      }
+    })
+
+    $('#breakContentButton').click(function(){
+      var selStart = $("#content")[0].selectionStart;
+      var selEnd = $("#content")[0].selectionEnd;
+
+      console.log(selStart)
+      console.log(selEnd)
+
+      var originalString = $("#content").val();
+      var charNumber = parseInt(selEnd) - parseInt(selStart)
+      if (charNumber === 0) {
+      console.log(charNumber)
+        var segment_1 = originalString.substr(0,selStart);
+        var segment_2 = originalString.substr(selStart,charNumber);
+        var segment_3 = originalString.substr(selEnd,originalString.length);
+        console.log(segment_1)
+        console.log(segment_2)
+        console.log(segment_3)
+        var finalString = segment_1 + "</br></br>" + segment_3
+        $("#content").val(finalString);
+      }
     })
   })
 </script>
@@ -103,13 +220,18 @@
        </br>
        <%= f.text_area :teaser, id: "teaser" %>
        </br>
-       <a id="teaserButton" class="btn" href="#">TEASER HYPERLINK</a> (highlight word to hyperlink then click the button)
+       <a id="teaserButton" class="btn" href="#">TEASER HYPERLINK</a>
+       <a id="boldTeaserButton" class="btn" href="#">BOLD</a>
+       <a id="italicTeaserButton" class="btn" href="#">ITALIC</a>
        </br>
        <%= f.label :content %>
        </br>
        <%= f.text_area :content, id: "content" %>
        </br>
-       <a id="contentButton" class="btn" href="#">CONTENT HYPERLINK</a> (highlight word to hyperlink then click the button)
+       <a id="contentButton" class="btn" href="#">CONTENT HYPERLINK</a>
+       <a id="boldContentButton" class="btn" href="#">BOLD</a>
+       <a id="italicContentButton" class="btn" href="#">ITALIC</a>
+       <a id="breakContentButton" class="btn" href="#">PARAGRAPH BREAK</a>
        </br>
        </br>
        <%= f.label :pictures %>

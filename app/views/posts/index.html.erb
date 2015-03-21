@@ -18,6 +18,8 @@
   </div>
 <% end %>
 
+<div id="buffer"></div>
+
 <% if @posts.empty? %>
   <% if params["search"].present? %>
     <div id="listings">No results came up for your search</div>
