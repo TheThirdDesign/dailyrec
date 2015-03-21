@@ -34,8 +34,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rails_12factor', group: :production
 gem 'httparty'
 gem 'json'
-gem "paperclip"
-
+gem 'asset_sync'
+gem "fog", "~>1.20", require: "fog/aws/storage"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
