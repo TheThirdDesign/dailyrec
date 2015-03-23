@@ -99,6 +99,11 @@
 <% @newCounterMore = @counter + 1 %>
 <% @newCounterLess = @start - 5 %>
 
+<% if @posts.length < 5 %>
+<script>
+ $('#moreLess').css("display","none");
+</script>
+<% end %>
 <div id="moreLess">
 <% if @newCounterMore < @posts.length %>
   <div id="older" class=".blogButton">
