@@ -101,7 +101,9 @@
 
 <% if @posts.length < 5 %>
 <script>
+$(document).ready(function(){
  $('#moreLess').css("display","none");
+ })
 </script>
 <% end %>
 <div id="moreLess">
