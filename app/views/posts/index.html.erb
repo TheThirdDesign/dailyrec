@@ -65,7 +65,7 @@
   <% elsif post.layout == "threePics" %>
   <div id="layout3" class="post">
     <div id="top" class="layout3">
-      <img class="postImage" id="pic1" src="<%= post.pictures[0] %>">
+      <img id="pic1" src="<%= post.pictures[0] %>">
       <img id="pic2" src="<%= post.pictures[1] %>">
       <img id="pic3" src="<%= post.pictures[2] %>">
     </div>
@@ -102,10 +102,15 @@
 <% if @posts.length < 5 %>
 <script>
 $(document).ready(function(){
- $('#moreLess').css("display","none");
- var newHeight = $('.postImage').height()
- $('.post').css("height", newHeight + 100)
- })
+  var post = $('.post').attr('id');
+  if (post === 'layout3') {
+      return
+  } else {
+     $('#moreLess').css("display","none");
+     var newHeight = $('.postImage').height()
+     $('.post').css("height", newHeight + 100)
+     })
+  }
 </script>
 <% end %>
 <div id="moreLess">
