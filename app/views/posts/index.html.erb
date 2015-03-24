@@ -36,7 +36,7 @@
     <div id="layout1" class="post">
         <div id="left" class="layout1">
           <div id="leftImage" class="layout1">
-            <img src="<%= post.pictures[0] %>">
+            <img class="postImage" src="<%= post.pictures[0] %>">
           </div>
         </div>
         <div id="right" class="layout1">
@@ -49,7 +49,7 @@
   <% elsif post.layout == "horizontalPicture"%>
     <div id="layout2" class="post">
       <div id="top2" class="layout2">
-        <img src="<%= post.pictures[0] %>">
+        <img class="postImage" class="postImage" src="<%= post.pictures[0] %>">
       </div>
       <div id="bottom" class="layout2">
         <div id="bottomLeft" class="layout2">
@@ -65,7 +65,7 @@
   <% elsif post.layout == "threePics" %>
   <div id="layout3" class="post">
     <div id="top" class="layout3">
-      <img id="pic1" src="<%= post.pictures[0] %>">
+      <img class="postImage" id="pic1" src="<%= post.pictures[0] %>">
       <img id="pic2" src="<%= post.pictures[1] %>">
       <img id="pic3" src="<%= post.pictures[2] %>">
     </div>
@@ -90,7 +90,7 @@
         </div>
         <div id="right" class="layout4">
           <div id="leftImage" class="layout1">
-            <img src="<%= post.pictures[0] %>"/>
+            <img class="postImage" src="<%= post.pictures[0] %>"/>
           </div>
         </div>
     </div>
@@ -103,8 +103,8 @@
 <script>
 $(document).ready(function(){
  $('#moreLess').css("display","none");
- var newHeight = $('.post').height()
- $('.post').css("height", newHeight - 100)
+ var newHeight = $('.postImage').height()
+ $('.post').css("height", newHeight + 100)
  })
 </script>
 <% end %>
