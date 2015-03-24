@@ -10,6 +10,8 @@
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag "style" %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= auto_discovery_link_tag :atom, "/feed" %>
+  <%= auto_discovery_link_tag :rss, "/feed.rss" %>
 </head>
 <body>
   <form id="searchBar" action="/search" method="get" accept-charset="UTF-8" >
