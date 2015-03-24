@@ -103,7 +103,7 @@
 <script>
 $(document).ready(function(){
   var post = $(this).attr('id');
-  if (post != 'layout3') {
+  if (post === 'layout3') {
       console.log('all good')
   } else {
      $('#moreLess').css("display","none");
