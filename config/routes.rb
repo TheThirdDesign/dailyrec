@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :matchusers
   resources :listings
-  resources :posts, defaults: { format: 'atom' } do
+  resources :posts do
     resources :comments
   end
   resources :users
@@ -20,11 +20,6 @@ Rails.application.routes.draw do
   resources :drafts do
     resources :images
   end
-
-  resources :posts
-  get '/feed' => 'posts#feed',
-      :as => :feed,
-      :defaults => { :format => 'atom' }
 
   get '/aboutus' => 'home#show'
   get '/FAQ' => 'about#show'
