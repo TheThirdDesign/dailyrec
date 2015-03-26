@@ -632,6 +632,26 @@ div#right.layout4 {
 }
 }
 
+#new_user input[type="submit"] {
+  background-color: white;
+  border: 1px solid grey;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  width: 24%;
+  margin-top: 20px;
+}
+
+#new_user label {
+  margin: 11px;
+}
+
+#new_user input[type="email"] {
+  width: 50%;
+}
+
+#new_user input[type="text"] {
+  width: 50%;
+}
 // @media only screen
 //     and (min-device-width : 375px)
 //     and (max-device-width : 667px)
