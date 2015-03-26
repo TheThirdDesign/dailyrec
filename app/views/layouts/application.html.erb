@@ -146,12 +146,28 @@ $(window).resize(function() {
   $("#layout4.post").height(width);
   });
 
+$(window).load(function() {
+  var width = $(window).width() / 1.9;
+  $("#layout4.post").height(width);
+  });
+
 $(window).resize(function() {
   var width = $(window).width() / 1.9;
   $("#layout1.post").height(width);
   });
 
+$(window).load(function() {
+  var width = $(window).width() / 1.9;
+  $("#layout1.post").height(width);
+  });
+
+
 $(window).resize(function() {
+  var width = $(window).width() / 1.43;
+  $("#layout2.post").height(width);
+  });
+
+$(window).load(function() {
   var width = $(window).width() / 1.43;
   $("#layout2.post").height(width);
   });
@@ -162,16 +178,27 @@ $(window).resize(function() {
   $("#layout3.post").css("margin-bottom","75px")
   });
 
+$(window).load(function() {
+  var width = $(window).width() / 1.8;
+  $("#layout3.post").height(width);
+  $("#layout3.post").css("margin-bottom","75px")
+  });
+
 $(window).resize(function() {
   var width = $(window).width() / 2.9;
   $("#top.layout3").height(width);
   });
 
+  $(window).load(function() {
+    var width = $(window).width() / 2.9;
+    $("#top.layout3").height(width);
+    });
+
 $(window).resize(function() {
   var width = $(window).width() / 1.6;
   $("#topImage").height(width);
   });
-$(document).ready(function() {
+$(window).load(function() {
   var width = $(window).width() / 1.6;
   $("#topImage").height(width);
   });
@@ -192,7 +219,7 @@ $(document).ready(function() {
         var width = $(window).width() / 2.9;
         $("#top.layout3").height(width);
         });
-      $(document).ready(function() {
+      $(window).load(function() {
         var width = $(window).width() / 2.9;
         $("#top.layout3").height(width);
       });
@@ -202,7 +229,7 @@ $(document).ready(function() {
         $("#layout3.post").height(width);
         $("#layout3.post").css("margin-bottom","75px")
         });
-      $(document).ready(function() {
+      $(window).load(function() {
         var width = $(window).width() / 1.6;
         $("#layout3.post").height(width);
         $("#layout3.post").css("margin-bottom","75px")
@@ -212,7 +239,7 @@ $(document).ready(function() {
         var width = $(window).width() / 1.29;
         $("#layout2.post").height(width);
         });
-      $(document).ready(function() {
+      $(window).load(function() {
         var width = $(window).width() / 1.29;
         $("#layout2.post").height(width);
         });
@@ -221,7 +248,7 @@ $(document).ready(function() {
         var width = $(window).width() / 1.9;
         $("#layout1.post").height(width);
         });
-      $(document).ready(function() {
+      $(window).load(function() {
         var width = $(window).width() / 1.9;
         $("#layout1.post").height(width);
         });
@@ -230,7 +257,7 @@ $(document).ready(function() {
         var width = $(window).width() / 1.9;
         $("#layout4.post").height(width);
         });
-      $(document).ready(function() {
+      $(window).load(function() {
         var width = $(window).width() / 1.9;
         $("#layout4.post").height(width);
         });
@@ -239,7 +266,7 @@ $(document).ready(function() {
           var width = $(window).width() / 1.4;
           $("div#topImage").height(width);
           });
-        $(document).ready(function() {
+        $(window).load(function() {
           var width = $(window).width() / 1.4;
           $("div#topImage").height(width);
           });
@@ -267,7 +294,7 @@ if($(window).width() < 768) {
     var width = $(window).width() / .8;
     $("div#topImage").height(width);
     });
-  $(document).ready(function() {
+  $(window).load(function() {
     var width = $(window).width() / .8;
     $("div#topImage").height(width);
     });

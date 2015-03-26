@@ -1596,7 +1596,7 @@ div#bottomLeft {
 div#postBlurb2 {
   text-align: right;
   padding-right: 20px;
-  border-right: 1px solid #041e42;
+  border-right: none;
   padding-top: 20px;
   border-top: 1px solid #041e42;
   font-size: 17px;
@@ -1611,6 +1611,7 @@ div#bottomRight {
   padding-top: 20px;
   border-top: 1px solid rgba(4,30,66,1);
   font-family: 'Lato', sans-serif;
+  border-left: 1px solid #041e42;
 }
 
 div#postTitle2 {
