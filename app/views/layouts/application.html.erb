@@ -130,7 +130,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script type=text/javascript async defer data-pin-color="white" data-pin-hover=true  src="//assets.pinterest.com/js/pinit.js"></script>
-<script>
+<script type="text/javascript">
 
 if ($(window).width() > 1075 ) {
   $(document).ready(function(){
@@ -146,7 +146,7 @@ $(window).resize(function() {
   $("#layout4.post").height(width);
   });
 
-$(window).load(function() {
+$(document).ready(function() {
   var width = $(window).width() / 1.9;
   $("#layout4.post").height(width);
   });
@@ -156,7 +156,7 @@ $(window).resize(function() {
   $("#layout1.post").height(width);
   });
 
-$(window).load(function() {
+$(document).ready(function() {
   var width = $(window).width() / 1.9;
   $("#layout1.post").height(width);
   });
@@ -167,7 +167,7 @@ $(window).resize(function() {
   $("#layout2.post").height(width);
   });
 
-$(window).load(function() {
+$(document).ready(function() {
   var width = $(window).width() / 1.43;
   $("#layout2.post").height(width);
   });
@@ -178,7 +178,7 @@ $(window).resize(function() {
   $("#layout3.post").css("margin-bottom","75px")
   });
 
-$(window).load(function() {
+$(document).ready(function() {
   var width = $(window).width() / 1.8;
   $("#layout3.post").height(width);
   $("#layout3.post").css("margin-bottom","75px")
@@ -189,7 +189,7 @@ $(window).resize(function() {
   $("#top.layout3").height(width);
   });
 
-  $(window).load(function() {
+  $(document).ready(function() {
     var width = $(window).width() / 2.9;
     $("#top.layout3").height(width);
     });
@@ -198,7 +198,7 @@ $(window).resize(function() {
   var width = $(window).width() / 1.6;
   $("#topImage").height(width);
   });
-$(window).load(function() {
+$(document).load(function() {
   var width = $(window).width() / 1.6;
   $("#topImage").height(width);
   });

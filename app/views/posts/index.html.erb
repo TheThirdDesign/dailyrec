@@ -101,22 +101,14 @@
 
 <% if @posts.length < 5 %>
 
-<script>
+<script type="text/javascript">
 $(document).ready(function(){
   $('#moreLess').css("display","none");
   console.log("erased")
-//   var post = $(this).attr('id');
-//   if (post === 'layout3') {
-//       console.log('all good')
-//   } else {
-//
-//      var newHeight = ($('.postImage').height() + 100)
-//      console.log(newHeight)
-//      $('.post').css("height", parseInt(newHeight))
-//   }
 })
 </script>
 <% end %>
+
 <div id="moreLess">
 <% if @newCounterMore < @posts.length %>
   <div id="older" class=".blogButton">
