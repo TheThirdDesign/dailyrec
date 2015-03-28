@@ -1211,7 +1211,7 @@ div#navbar-collapse-1 {
 
 /* line 1338, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .instaHolder2 {
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-bottom: 4.5%;
 }
@@ -1895,7 +1895,7 @@ li#addPost:hover {
 /* line 1923, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#older {
   float: left;
-  width: 50%;
+  width: 42%;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;
@@ -1905,9 +1905,10 @@ div#older {
   display: -webkit-flex;
   /* NEW - Chrome */
   display: flex;
+  margin-right: 10px;
 }
 
-/* line 1933, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1934, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#older a {
   margin: auto;
   text-decoration: none;
@@ -1917,10 +1918,10 @@ div#older a {
   font-family: 'Lato', sans-serif;
 }
 
-/* line 1942, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1943, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#newer {
   float: left;
-  width: 50%;
+  width: 42%;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;
@@ -1930,9 +1931,10 @@ div#newer {
   display: -webkit-flex;
   /* NEW - Chrome */
   display: flex;
+  margin-left: 10px;
 }
 
-/* line 1952, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1954, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#newer a {
   margin: auto;
   color: white;
@@ -1942,26 +1944,26 @@ div#newer a {
   font-family: 'Lato', sans-serif;
 }
 
-/* line 1961, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1963, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#moreLess {
-  width: 50%;
+  width: 60%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
   height: 70px;
 }
 
-/* line 1969, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1971, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#older a:hover {
   background-color: #c1c6c8;
 }
 
-/* line 1973, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1975, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#newer a:hover {
   background-color: #c1c6c8;
 }
 
-/* line 1977, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1979, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .search {
   position: fixed;
   right: 0;
@@ -1974,12 +1976,12 @@ div#newer a:hover {
   z-index: 10;
 }
 
-/* line 1989, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1991, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .search form {
   display: none;
 }
 
-/* line 1993, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 1995, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 form#searchBar {
   position: fixed;
   top: 250px;
@@ -1987,57 +1989,57 @@ form#searchBar {
   width: 50%;
 }
 
-/* line 2000, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2002, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#search {
   padding-right: 23px;
 }
 
-/* line 2004, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2006, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#heading {
   font-size: 40px;
   margin-bottom: 20px;
 }
 
-/* line 2009, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2011, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .search form input[type="text"] {
   width: 100%;
   height: 48px;
 }
 
-/* line 2014, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2016, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#formButtonHolder input[type="submit"] {
   margin-bottom: 200px;
 }
 
-/* line 2018, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2020, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#login {
   width: 50%;
   margin: auto;
   margin-top: 100px;
 }
 
-/* line 2024, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2026, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 li#addPost form button {
   border: none;
   background: none;
   color: white;
 }
 
-/* line 2030, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2032, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 textarea#faq_question {
   margin: 0px;
   width: 703px;
   height: 77px;
 }
 
-/* line 2036, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2038, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 textarea#faq_answer {
   margin: 0px;
   width: 704px;
   height: 158px;
 }
 
-/* line 2042, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2044, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#faqSection {
   width: 60%;
   margin: auto;
@@ -2045,12 +2047,12 @@ div#faqSection {
   margin-bottom: 100px;
 }
 
-/* line 2049, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2051, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#faqHolder {
   margin-bottom: 25px;
 }
 
-/* line 2053, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2055, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#question {
   padding: 10px;
   font-family: 'Lato', sans-serif;
@@ -2058,7 +2060,7 @@ div#question {
   text-align: center;
 }
 
-/* line 2060, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2062, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#answer {
   padding: 5px;
   font-family: 'Lato', sans-serif;
@@ -2066,7 +2068,7 @@ div#answer {
   line-height: 20px;
 }
 
-/* line 2067, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2069, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#comment {
   width: 50%;
   margin: auto;
@@ -2075,14 +2077,14 @@ div#comment {
   margin-bottom: 15px;
 }
 
-/* line 2075, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2077, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .comment {
   width: 60%;
   margin: auto;
   font-family: 'Lato', sans-serif;
 }
 
-/* line 2081, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2083, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 form#new_comment {
   margin: auto;
   text-align: center;
@@ -2090,17 +2092,17 @@ form#new_comment {
   display: none;
 }
 
-/* line 2087, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2089, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 form#new_comment input[type="submit"] {
   width: 8%;
 }
 
-/* line 2091, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2093, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 form#new_comment input[type="submit"]:hover {
   background-color: #c1c6c8;
 }
 
-/* line 2095, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2097, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#comments {
   margin: auto;
   width: 60%;
@@ -2112,40 +2114,40 @@ div#comments {
   display: none;
 }
 
-/* line 2106, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2108, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .comments {
   padding: 5px;
 }
 
-/* line 2110, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2112, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 ::-webkit-input-placeholder {
   color: black;
   font-family: 'Lato', sans-serif;
   padding-left: 21px;
 }
 
-/* line 2116, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2118, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 :-moz-placeholder {
   color: black;
   font-family: 'Lato', sans-serif;
   padding-left: 21px;
 }
 
-/* line 2122, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2124, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 ::-moz-placeholder {
   color: black;
   font-family: 'Lato', sans-serif;
   padding-left: 21px;
 }
 
-/* line 2128, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2130, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 :-ms-input-placeholder {
   color: black;
   font-family: 'Lato', sans-serif;
   padding-left: 21px;
 }
 
-/* line 2134, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2136, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#closeSearch {
   position: fixed;
   z-index: 9;
@@ -2153,7 +2155,7 @@ div#closeSearch {
   top: 28px;
 }
 
-/* line 2141, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2143, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#closeContact {
   position: fixed;
   z-index: 9;
@@ -2161,7 +2163,7 @@ div#closeContact {
   top: 28px;
 }
 
-/* line 2148, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2150, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#formPopUp {
   position: fixed;
   top: 200px;
@@ -2170,14 +2172,14 @@ div#formPopUp {
   margin-bottom: 400px;
 }
 
-/* line 2156, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2158, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#formMatch form input {
   color: black;
   width: 50%;
   margin: 20px;
 }
 
-/* line 2162, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2164, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#formMatch {
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -2188,7 +2190,7 @@ div#formMatch {
   width: 98.6%;
 }
 
-/* line 2172, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2174, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .container4 {
   width: 60%;
   margin: auto;
@@ -2197,18 +2199,18 @@ div#formMatch {
   margin-top: 50px;
 }
 
-/* line 2180, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2182, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#matchuser {
   width: 90%;
   margin: auto;
 }
 
-/* line 2185, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2187, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#formMatch form input[type="submit"] {
   width: 25%;
 }
 
-/* line 2189, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2191, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#titleMatch {
   margin: auto;
   margin-bottom: 30px;
@@ -2218,17 +2220,17 @@ div#titleMatch {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* line 2198, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2200, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#matchContainer {
   width: 100%;
 }
 
-/* line 2202, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2204, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#formMatch form input {
   text-align: center;
 }
 
-/* line 2206, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2208, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 #SigninButton a {
   padding-top: 30px;
   background-color: #041e42;
@@ -2240,7 +2242,7 @@ div#formMatch form input {
   text-decoration: none;
 }
 
-/* line 2217, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2219, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#SigninButton {
   width: 50%;
   margin: auto;
@@ -2249,24 +2251,24 @@ div#SigninButton {
   margin-bottom: 100px;
 }
 
-/* line 2225, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2227, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 #SigninButton a:hover {
   background-color: #c1c6c8;
 }
 
-/* line 2229, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2231, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .matchEmail {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-/* line 2234, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2236, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .row.love {
   margin: auto;
   width: 50%;
 }
 
-/* line 2239, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2241, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .love p {
   text-align: center;
   line-height: 30px;
@@ -2274,7 +2276,7 @@ div#SigninButton {
   font-size: 15px;
 }
 
-/* line 2246, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2248, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#urlField {
   display: none;
   position: fixed;
@@ -2287,51 +2289,57 @@ div#urlField {
   padding: 5px;
 }
 
-/* line 2258, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2260, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 .info {
   font-weight: 300;
 }
 
-/* line 2262, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2264, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 b.bold {
   font-weight: bold;
 }
 
-/* line 2266, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2268, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 i.italic {
   font-style: italic;
 }
 
-/* line 2270, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2272, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#buffer {
   margin: 150px;
 }
 
-/* line 2274, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2276, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#searchBar {
   display: none;
 }
 
-/* line 2278, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2280, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#closeSearch {
   display: none;
 }
 
-/* line 2282, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2284, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#closeContact {
   display: none;
 }
 
-/* line 2286, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2288, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 div#formPopUp {
   display: none;
 }
 
+@media (max-width: 440px) {
+  /* line 2293, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+  div#bottomRight.layout2 {
+    border-left: none;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 2294, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2302, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2354,35 +2362,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 2315, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2323, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 2319, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2327, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 body {
   line-height: 1;
 }
 
-/* line 2322, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2330, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 2325, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2333, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 2328, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2336, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 2333, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
+/* line 2341, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;

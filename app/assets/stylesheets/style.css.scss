@@ -1336,7 +1336,7 @@ margin-right: 2.4%;
 }
 
 .instaHolder2 {
-width: 90%;
+width: 100%;
 margin: auto;
 margin-bottom: 4.5%;
 }
@@ -1922,12 +1922,13 @@ li#addPost:hover {
 
 div#older {
   float: left;
-  width: 50%;
+  width: 42%;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 display: -ms-flexbox;      /* TWEENER - IE 10 */
 display: -webkit-flex;     /* NEW - Chrome */
 display: flex;
+margin-right: 10px;
 }
 
 div#older a {
@@ -1941,12 +1942,13 @@ div#older a {
 
 div#newer {
   float: left;
-  width: 50%;
+  width: 42%;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 display: -ms-flexbox;      /* TWEENER - IE 10 */
 display: -webkit-flex;     /* NEW - Chrome */
 display: flex;
+margin-left: 10px;
 }
 
 div#newer a {
@@ -1959,7 +1961,7 @@ div#newer a {
 }
 
 div#moreLess {
-  width: 50%;
+  width: 60%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -2285,6 +2287,12 @@ div#closeContact {
 
 div#formPopUp {
   display: none;
+}
+
+@media (max-width: 440px) {
+  div#bottomRight.layout2 {
+    border-left: none;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
