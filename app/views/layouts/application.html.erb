@@ -584,7 +584,7 @@ $(document).ready(function(){
    });
 }
 
-$(window).load(function(){
+$(document).ready(function(){
     var height = $('#top_img').height()
     var width = $('#top_img').width()
     console.log(height)
@@ -601,7 +601,7 @@ $(window).load(function(){
       $(document).ready(function(){
           var height = $('#top_img').height()
           console.log("this height: " + height)
-          var newHeight = height + 150;
+          var newHeight = height + 100;
           $('#topImage').css("height",newHeight +"px")
       })
     }
