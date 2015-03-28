@@ -5,14 +5,14 @@
       <img src="<%= @post.pictures[0] %>">
     </div>
     <div id="contentArea">
-      <div id="showTitle"><%= @post.title %></div>
+      <div id="showTitle"><%=raw @post.title.html_safe %></div>
     </div>
     <div id="contentArea">
       <% @admin = Admin.find_by(id: @post.admin_id)%>
       <div id="showDateCategory"><%= @post.date %> // <%= @admin.name %></div>
     </div>
     <div id="contentArea">
-      <div id="showContent"><%= @post.content.html_safe %></div>
+      <div id="showContent"><%=raw @post.content.html_safe %></div>
     </div>
     <% @post.pictures.each do |picture| %>
       <% if @post.pictures.index(picture) == 0 %>
