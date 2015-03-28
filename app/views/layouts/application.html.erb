@@ -584,6 +584,30 @@ $(document).ready(function(){
    });
 }
 
+$(window).load(function(){
+    var height = $('#top_img').height()
+    var width = $('#top_img').width()
+    console.log(height)
+    console.log(width)
+    if (width > height) {
+      $('#topImage img').css("width","65%")
+      $(document).ready(function(){
+          var height = $('#top_img').height()
+          console.log("this height: " + height)
+          var newHeight = height + 150;
+          $('#topImage').css("height",newHeight +"px")
+      })
+    } else {
+      $(document).ready(function(){
+          var height = $('#top_img').height()
+          console.log("this height: " + height)
+          var newHeight = height + 150;
+          $('#topImage').css("height",newHeight +"px")
+      })
+    }
+})
+
+
 </script>
 
 </body>

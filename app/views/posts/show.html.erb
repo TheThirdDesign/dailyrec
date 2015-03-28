@@ -1,15 +1,14 @@
 
-
 <div id="postHolder">
     <div id="topImage">
-      <img src="<%= @post.pictures[0] %>">
+      <img src="<%= @post.pictures[0] %>" id="top_img">
     </div>
     <div id="contentArea">
       <div id="showTitle"><%=raw @post.title.html_safe %></div>
     </div>
     <div id="contentArea">
       <% @admin = Admin.find_by(id: @post.admin_id)%>
-      <div id="showDateCategory"><%= @post.date %> // <%= @admin.name %></div>
+      <div id="showDateCategory"><%= @post.date %> // <%= @admin.name if @admin.present? %></div>
     </div>
     <div id="contentArea">
       <div id="showContent"><%=raw @post.content.html_safe %></div>
