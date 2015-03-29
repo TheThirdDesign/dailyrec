@@ -2290,10 +2290,18 @@ div#formPopUp {
 }
 
 @media (max-width: 440px) {
-  
+
   div#bottomRight.layout2 {
     border-left: none;
   }
+}
+
+#blogUL a:hover {
+  cursor: default;
+}
+
+#aboutUL a:hover {
+  cursor: default;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
