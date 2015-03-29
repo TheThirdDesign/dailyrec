@@ -2337,12 +2337,12 @@ div#formPopUp {
 }
 /* line 2299, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 #blogUL a:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 /* line 2303, /Users/rolanjackson/Freelance/dailyrec/app/assets/stylesheets/style.css.scss */
 #aboutUL a:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -2405,20 +2405,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- 
-
-
-
- */
-
