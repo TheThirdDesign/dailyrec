@@ -2356,6 +2356,99 @@ div#formPopUp {
 #aboutUL a:hover {
   cursor: pointer;
 }
+
+li#addPost a {
+  margin: auto;
+}
+
+li#addPost {
+  display: flex;
+}
+
+li#addPost form {
+  margin: auto;
+}
+
+#form1 form label {
+  font-size: 30px;
+  font-family: lato;
+}
+
+.buttonHolder {
+  display: flex;
+}
+
+label.layoutTitle {
+  font-size: 20px!important;
+  padding-left: 16px;
+}
+
+.category {
+  display: flex;
+}
+
+.section {
+  background-color: rgba(192,192,192,.5);
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 7px;
+}
+
+#form1 form input[type="submit"]:hover {
+  background-color: rgba(192,192,192,.5);
+}
+
+#form1 form input[type="submit"] {
+  width: 25%;
+  padding: 15px;
+  margin: auto;
+}
+
+div#formButtonHolder {
+  display: flex;
+  width: 100%;
+}
+
+.delete_link {
+  float: left;
+  width: 10%;
+}
+
+.edit_link {
+  float: left;
+  width: 10%;
+}
+
+.post_category {
+  width: 20%;
+  float: left;
+}
+
+.post_date {
+  width: 20%;
+  float: left;
+}
+
+.post_title {
+  width: 25%;
+  float: left;
+}
+
+.faq_question {
+  width: 50%;
+  float: left;
+}
+
+.user_email {
+  width: 30%;
+  float: left;
+}
+
+.username {
+  width: 30%;
+  float: left;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)

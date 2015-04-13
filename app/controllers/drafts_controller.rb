@@ -40,10 +40,10 @@ class DraftsController < ApplicationController
         draft = Draft.find_by(id: params[:id])
         draft.destroy
 # send out update about new post to all users
-        @users = User.all
-        @users.each do |user|
-          UserNotifier.send_update_email(user, @post).deliver
-        end
+        # @users = User.all
+        # @users.each do |user|
+        #   UserNotifier.send_update_email(user, @post).deliver
+        # end
         redirect_to '/admin'
       end
     else

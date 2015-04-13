@@ -1,52 +1,44 @@
-
+<div class="section">
 <div id="heading">DRAFTS</div>
 <% @drafts.each do |post| %>
   <div class="row">
-    <div class="col-md-3"><%= post.title %></div>
-    <div class="col-md-2"><%= post.date %></div>
-    <div class="col-md-2"><%= post.category %></div>
-    <div class="col-md-1"><%= link_to "EDIT", edit_draft_path(post.id, :type => "save") %></div>
-    <div class="col-md-1"><%= link_to "DELETE", draft_path(post.id), :method => 'delete' %></div>
-    <div class="col-md-1"><%= link_to "PUBLISH", edit_draft_path(post.id, :type => "publish") %></div>
+    <div class="post_title col-md-3"><%= post.title %></div>
+    <div class="post_date col-md-2"><%= post.date %></div>
+    <div class="post_category col-md-2"><%= post.category %></div>
+    <div class="edit_link col-md-1"><%= link_to "EDIT", edit_draft_path(post.id, :type => "save") %></div>
+    <div class="delete_link col-md-1"><%= link_to "DELETE", draft_path(post.id), :method => 'delete' %></div>
+    <div class="publish_link col-md-1"><%= link_to "PUBLISH", edit_draft_path(post.id, :type => "publish") %></div>
   </div>
 <% end %>
-
-</br>
-</br>
-</br>
-
+</div>
+<div class="section">
 <div id="heading">LIVE POSTS</div>
   <% @posts.each do |post| %>
     <div class="row">
-      <div class="col-md-3"><%= post.title %></div>
-      <div class="col-md-2"><%= post.date %></div>
-      <div class="col-md-2"><%= post.category %></div>
-      <div class="col-md-1"><%= link_to "EDIT", edit_post_path(post.id) %></div>
-      <div class="col-md-1"><%= link_to "DELETE", post_path(post.id), :method => 'delete' %></div>
+      <div class="post_title col-md-3"><%= post.title %></div>
+      <div class="post_date col-md-2"><%= post.date %></div>
+      <div class="post_category col-md-2"><%= post.category %></div>
+      <div class="edit_link col-md-1"><%= link_to "EDIT", edit_post_path(post.id) %></div>
+      <div class="delete_link col-md-1"><%= link_to "DELETE", post_path(post.id), :method => 'delete' %></div>
     </div>
   <% end %>
-
-</br>
-</br>
-</br>
-
+</div>
+<div class="section">
 <div id="heading">LIVE FAQ</div>
   <% @faqs.each do |post| %>
     <div class="row">
-      <div class="col-md-7"><%= post.question %></div>
-      <div class="col-md-1"><%= link_to "EDIT", edit_faq_path(post.id) %></div>
-      <div class="col-md-1"><%= link_to "DELETE", faq_path(post.id), :method => 'delete' %></div>
+      <div class="faq_question col-md-7"><%= post.question %></div>
+      <div class="edit_link col-md-1"><%= link_to "EDIT", edit_faq_path(post.id) %></div>
+      <div class="delete_link col-md-1"><%= link_to "DELETE", faq_path(post.id), :method => 'delete' %></div>
     </div>
   <% end %>
-
-</br>
-</br>
-</br>
-
+</div>
+<div class="section">
 <div id="heading">USERS</div>
   <% @users.each do |user| %>
     <div class="row">
-      <div class="col-md-4"><%= user.name %></div>
-      <div class="col-md-3"><%= user.email %></div>
+      <div class="username col-md-4"><%= user.name %></div>
+      <div class="user_email col-md-3"><%= user.email %></div>
     </div>
   <% end %>
+</div>

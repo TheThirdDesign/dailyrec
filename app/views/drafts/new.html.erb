@@ -7,67 +7,84 @@
 
 <div id="form1">
   <%= form_for @draft do |f| %>
+
+    <div class="section">
        <%= f.label :title %>
        </br>
        <%= f.text_field :title %>
-       </br>
-       </br>
+     </div>
+
+    <div class="section">
        <%= f.label :date %>
        </br>
        <%= f.text_field :date %>
-       </br>
-       </br>
+    </div>
+
+    <div class="section">
        <%= f.label :teaser %>
        </br>
        <%= f.text_area :teaser, id: "teaser" %>
-       </br>
-       <!-- <a id="teaserButton" class="btn" href="#">TEASER HYPERLINK</a>
-       <a id="boldTeaserButton" class="btn" href="#">BOLD</a>
-       <a id="italicTeaserButton" class="btn" href="#">ITALIC</a> -->
-       </br>
+    </div>
+    <div class="section">
        <%= f.label :content %>
        </br>
        <%= f.text_area :content, id: "content" %>
-       </br>
-       <!-- <a id="contentButton" class="btn" href="#">CONTENT HYPERLINK</a>
-       <a id="boldContentButton" class="btn" href="#">BOLD</a>
-       <a id="italicContentButton" class="btn" href="#">ITALIC</a>
-       <a id="breakContentButton" class="btn" href="#">PARAGRAPH BREAK</a> -->
-       </br>
-       </br>
+    </div>
+
+    <div class="section">
        <%= f.label :pictures %>
        </br>
        <%= f.text_field :pictures, as: :array %>
        <%= f.hidden_field :admin_id, :value => session[:admin_id] %>
-       </br>
-       <%= f.radio_button :category, 'favorites', :checked => true %>
-       <%= f.label :category_favorites, 'Current Favorites' %>
-       <%= f.radio_button :category, 'stories' %>
-       <%= f.label :category_stories, 'Stories' %>
-       <%= f.radio_button :category, 'home' %>
-       <%= f.label :category_home, 'At Home' %>
+    </div>
+
+    <div class="section">
+      <div class="category">
+        <%= f.radio_button :category, 'favorites', :checked => true %>
+        <%= f.label :category_favorites, 'Current Favorites' %>
+      </div>
+      <div class="category">
+        <%= f.radio_button :category, 'stories' %>
+        <%= f.label :category_stories, 'Stories' %>
+      </div>
+      <div class="category">
+        <%= f.radio_button :category, 'home' %>
+        <%= f.label :category_home, 'At Home' %>
+      </div>
+    </div>
+
+    <div class="section">
     <div id="layoutHolder">
      <div class="radioHolder">
+       <div class="buttonHolder">
        <%= f.radio_button :layout, 'pictureLeft', :checked => true %>
-       <%= f.label :layout_pictureLeft, 'Picture on Left' %>
+       <%= f.label :layout_pictureLeft, 'Picture on Left', :class => "layoutTitle"  %>
+       </div>
        <%= image_tag 'PictureLeft.png'%>
      </div>
      <div class="radioHolder">
+       <div class="buttonHolder">
        <%= f.radio_button :layout, 'horizontalPicture' %>
-       <%= f.label :layout_horizontalPicture, 'Picture Horizontal' %>
+       <%= f.label :layout_horizontalPicture, 'Picture Horizontal', :class => "layoutTitle"  %>
+       </div>
        <%= image_tag 'horizontalTop.png'%>
       </div>
       <div class="radioHolder">
+        <div class="buttonHolder">
        <%= f.radio_button :layout, 'threePics' %>
-       <%= f.label :layout_threePics, '3 Pictures On Top' %>
+       <%= f.label :layout_threePics, '3 Pictures On Top', :class => "layoutTitle"  %>
+       </div>
        <%= image_tag 'threeonTop.png'%>
       </div>
       <div class="radioHolder">
+        <div class="buttonHolder">
        <%= f.radio_button :layout, 'pictureRight' %>
-       <%= f.label :layout_pictureRight, 'Picture on Right' %>
+       <%= f.label :layout_pictureRight, 'Picture on Right', :class => "layoutTitle" %>
+       </div>
        <%= image_tag 'PictureRight.png'%>
      </div>
    </div>
+ </div>
    <div id="formButtonHolder">
       <% if params["type"] == 'save' %>
        <%= f.submit "SAVE" %>
