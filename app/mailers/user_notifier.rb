@@ -4,7 +4,7 @@ class UserNotifier < ActionMailer::Base
   def send_signup_email(user)
     @user = user
     mail( :from => @user.email,
-    :to => "wahlbrooke@gmail.com",
+    :to => "wahlbrook@gmail.com",
     :subject => 'Somone just contacted you' )
   end
 
@@ -13,5 +13,13 @@ class UserNotifier < ActionMailer::Base
     mail(:from => "wahlbrooke@gmail.com",
     :to => @matchuser.email,
     :subject => 'MATCH MADNESS' )
+  end
+
+  def send_update_email(user, post)
+    @user = user
+    @post = post
+    mail(:from => "thedailyrec@gmail.com",
+    :to => @user.email,
+    :subject => 'The Daily Rec has a new post!' )
   end
 end

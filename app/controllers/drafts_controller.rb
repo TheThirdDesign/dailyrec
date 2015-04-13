@@ -2,7 +2,7 @@ class DraftsController < ApplicationController
   def new
     if session[:admin_id]
       @draft = Draft.new
-      
+
       render :layout => 'admins'
     else
       redirect_to '/admin/login'
@@ -39,6 +39,11 @@ class DraftsController < ApplicationController
         @post = Post.create(draft_params)
         draft = Draft.find_by(id: params[:id])
         draft.destroy
+# send out update about new post to all users
+        @users = User.all
+        @users.each do |user|
+          UserNotifier.send_update_email(user, @post).deliver
+        end
         redirect_to '/admin'
       end
     else
@@ -58,8 +63,11 @@ class DraftsController < ApplicationController
             render :new
           end
       elsif params[:commit] == "PUBLISH"
-
         @post = Post.create(draft_params)
+        @users = User.all
+        @users.each do |user|
+          UserNotifier.send_update_email(user, @post).deliver
+        end
         redirect_to '/admin'
       else
         redirect_to '/admin/login'

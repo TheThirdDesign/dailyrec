@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <%= stylesheet_link_tag "style" %>
+  </head>
+  <body>
+    <div>Hi, <%= @user.name %>,</div>
+    </br>
+    <div>Check out the new post from The Daily Rec.!</div>
+    </br>
+    <% if @post.layout == "pictureLeft" %>
+      <div id="layout1" class="post">
+          <div id="left" class="layout1">
+            <div id="leftImage" class="layout1">
+              <img class="postImage" src="<%= @post.pictures[0] %>">
+            </div>
+          </div>
+          <div id="right" class="layout1">
+            <div id="postTitle1" class="layout1 info"><%=raw @post.title.html_safe %></div>
+            <div id="postDate1" class="layout1 info"><%= @post.date%></div>
+            <div id="postBlurb1" class="layout1 info"><%=raw @post.teaser.html_safe %></div>
+            <div id="postButton1" class="blogButton"><a href="http://www.thedailyrec.com/posts/<%= @post.id %>">SEE POST</a></div>
+          </div>
+      </div>
+    <% elsif @post.layout == "horizontalPicture"%>
+      <div id="layout2" class="post" style="width: 70%; margin: auto; height: 800px;">
+        <div id="top2" class="layout2">
+          <img class="postImage" class="postImage" src="<%= @post.pictures[0] %>" style="width: 100%;">
+        </div>
+        <div id="bottom" class="layout2" style="width: 100%; margin-top: 20px;">
+          <div id="bottomLeft" class="layout2" style="width: 100%; float: left;">
+            <div id="postBlurb2" class="layout2 info" style="text-align: center; border-right: none; padding-top: 20px; border-top: 1px solid #041e42; font-size: 17px; font-family: 'Lato', sans-serif; line-height: 25px;"><%=raw @post.teaser.html_safe %></div>
+          </div>
+          <div id="bottomRight" class="layout2" style="width: 100%; float: left; padding-top: 20px; border-top: 1px solid rgba(4,30,66,1); font-family: 'Lato', sans-serif;">
+            <div id="postTitle2" class="layout2 info" style="border-bottom: 1px solid rgba(4,30,66,1); padding-bottom: 10px; font-size: 20px; font-family: 'Lato', sans-serif; text-align: center;"><%=raw @post.title.html_safe %></div>
+            <div id="postDate2" class="layout2 info" style="text-align: center; padding-top: 10px; padding-bottom: 10px; border-bottom: 1px solid rgba(4,30,66,1); font-size: 14px; font-family: 'Lato', sans-serif;"><%= @post.date%></div>
+            <div id="postButton1" class="blogButton" style="margin-left: 25%; margin-bottom: 10px; margin-top: 10px; width: 50%; text-align: center; /* border: 1px solid grey; */ font-family: 'Lato', sans-serif; font-weight: 100; background-color: rgba(4,30,66,1); text-decoration: none; color: white; padding-top: 20px; padding-bottom: 20px;"><a href="http://www.thedailyrec.com/posts/<%= @post.id %>" style="text-decoration: none; color: white;">SEE POST</a></div>
+          </div>
+        </div>
+      </div>
+    <% elsif @post.layout == "threePics" %>
+    <div id="layout3" class="post">
+      <div id="top" class="layout3">
+        <img id="pic1" src="<%= @post.pictures[0] %>">
+        <img id="pic2" src="<%= @post.pictures[1] %>">
+        <img id="pic3" src="<%= @post.pictures[2] %>">
+      </div>
+      <div id="bottom" class="layout2">
+        <div id="bottomLeft" class="layout2">
+          <div id="postBlurb2" class="layout2 info"><%=raw @post.teaser.html_safe %></div>
+        </div>
+        <div id="bottomRight" class="layout2">
+          <div id="postTitle2" class="layout2 info"><%=raw @post.title.html_safe %></div>
+          <div id="postDate2" class="layout2 info"><%= @post.date%></div>
+          <div id="postButton1" class="blogButton"><a href="http://www.thedailyrec.com/posts/<%= @post.id %>">SEE POST</a></div>
+        </div>
+      </div>
+    </div>
+    <% elsif @post.layout == "pictureRight" %>
+      <div id="layout4" class="post">
+          <div id="left" class="layout4">
+            <div id="postTitle1" class="layout4 info"><%=raw @post.title.html_safe %></div>
+            <div id="postDate1" class="layout4 info"><%= @post.date%></div>
+            <div id="postBlurb1" class="layout4 info"><%=raw @post.teaser.html_safe %></div>
+            <div id="postButton4" class="blogButton"><a href="http://www.thedailyrec.com/posts/<%= @post.id %>">SEE POST</a></div>
+          </div>
+          <div id="right" class="layout4">
+            <div id="leftImage" class="layout1">
+              <img class="postImage" src="<%= @post.pictures[0] %>"/>
+            </div>
+          </div>
+      </div>
+    <% end %>
+  </body>
+</html>

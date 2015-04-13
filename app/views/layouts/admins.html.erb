@@ -6,10 +6,13 @@
   <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <%= javascript_include_tag('bootstrap.js') %>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag "style" %>
+  <%= stylesheet_link_tag "bootstrap-wysihtml5"%>
+  <%= stylesheet_link_tag "bootstrap"%>
 </head>
 <body>
   <div id="urlField" class="form">
@@ -20,10 +23,10 @@
 
   <div class="container">
     <div class="row">
-      <ul class="col-md-12">
-        <li id="addPost" class="col-md-4"><%= link_to "NEW POST", new_draft_path %></li>
-        <li id="addPost" class="col-md-4"><%= link_to "NEW FAQ", new_faq_path %></li>
-        <li id="addPost" class="pull-right col-md-4">
+      <ul class="menuLinks">
+        <li id="addPost" class="col-md-3"><%= link_to "NEW POST", new_draft_path %></li>
+        <li id="addPost" class="col-md-3"><%= link_to "NEW FAQ", new_faq_path %></li>
+        <li id="addPost" class="pull-right col-md-3">
           <form method="POST" action="/session">
             <input name="authenticity_token" value="<%= form_authenticity_token() %>" type="hidden">
             <input name="_method" value="DELETE" type="hidden">
@@ -36,7 +39,6 @@
 <%= yield %>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
