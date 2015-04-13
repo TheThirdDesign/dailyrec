@@ -2,7 +2,7 @@
 <div id="heading">DRAFTS</div>
 <% @drafts.each do |post| %>
   <div class="row">
-    <div class="post_title col-md-3"><%= post.title %></div>
+    <div class="post_title col-md-3"><%=raw post.title.html_safe %></div>
     <div class="post_date col-md-2"><%= post.date %></div>
     <div class="post_category col-md-2"><%= post.category %></div>
     <div class="edit_link col-md-1"><%= link_to "EDIT", edit_draft_path(post.id, :type => "save") %></div>
@@ -15,7 +15,7 @@
 <div id="heading">LIVE POSTS</div>
   <% @posts.each do |post| %>
     <div class="row">
-      <div class="post_title col-md-3"><%= post.title %></div>
+      <div class="post_title col-md-3"><%=raw post.title.html_safe %></div>
       <div class="post_date col-md-2"><%= post.date %></div>
       <div class="post_category col-md-2"><%= post.category %></div>
       <div class="edit_link col-md-1"><%= link_to "EDIT", edit_post_path(post.id) %></div>
