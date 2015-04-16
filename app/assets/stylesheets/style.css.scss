@@ -1975,13 +1975,13 @@ li#addPost:hover {
 
 div#older {
   float: left;
-  width: 42%;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;     /* NEW - Chrome */
-display: flex;
-margin-right: 10px;
+  width: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* margin-left: 10px; */
 }
 
 div#older a {
@@ -1995,13 +1995,13 @@ div#older a {
 
 div#newer {
   float: left;
-  width: 42%;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-display: -ms-flexbox;      /* TWEENER - IE 10 */
-display: -webkit-flex;     /* NEW - Chrome */
-display: flex;
-margin-left: 10px;
+  width: 48%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* margin-left: 10px; */
 }
 
 div#newer a {
@@ -2014,7 +2014,7 @@ div#newer a {
 }
 
 div#moreLess {
-  width: 60%;
+  width: 50%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -2447,6 +2447,19 @@ div#formButtonHolder {
 .username {
   width: 30%;
   float: left;
+}
+
+form#searchBar input[type="text"] {
+  height: 60px;
+  width: 100%;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  border: none;
+}
+
+form#searchBar {
+  border: 7px solid rgb(4, 30, 66);
+  z-index: 10;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
