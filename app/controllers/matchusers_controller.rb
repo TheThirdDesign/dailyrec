@@ -1,7 +1,7 @@
 class MatchusersController < ApplicationController
 
   def index
-    
+
     if params["format"] == "csv"
       @matchusers = Matchuser.order(:name)
       respond_to do |format|
@@ -23,7 +23,7 @@ class MatchusersController < ApplicationController
     @matchuser = Matchuser.create(matchuser_params)
     if @matchuser.save
       # Deliver the signup email
-      UserNotifier.send_match_email(@matchuser).deliver
+      # UserNotifier.send_match_email(@matchuser).deliver
       redirect_to matchusers_path
     else
       render :action => 'new'
